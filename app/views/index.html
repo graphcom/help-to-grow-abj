@@ -1,0 +1,227 @@
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+
+
+{% set containerClasses = "banner-Class" %}
+{% set headerClasses = "banner-Class" %}
+
+{% block content %}
+<style>
+
+    .banner-Class{
+
+    }
+
+    .beis-navy-blue {
+        background-color: #1E1A34;
+        display: block;
+        height: 467px;
+    }
+
+    .beis-columns {
+        float: right;
+        color: #ffffff;
+        /*border: 1px solid white;*/
+        width: 300px;
+    }
+
+    .beis_columns_text {
+        width: 450px !important;
+        float: left !important;
+    }
+
+    .beis_columns_text > div,  .beis_columns_text > h1 ,  .beis_columns_text > p{
+        padding-left:20px
+    }
+
+    .beis-white-text {
+        color: #ffffff!important;
+    }
+
+    .govuk-\!-padding-right-8 {
+        padding-right: 50px !important;
+    }
+
+    a.govuk-link:link, a.govuk-link:visited {
+        font-weight: 700;
+        color: #1D70B8;
+    }
+
+    .beis-black{
+        background-color: #000;
+    }
+
+    .beis-yellow {
+        background-color:#FFB000;
+    }
+
+    .three-column-heroes .govuk-grid-column-one-third h3{
+        min-height: 3em;
+    }
+
+    .hero-banner a.hero-links:link, .hero-banner a.hero-links:visited {
+        color: #FFB000;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+</style>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <div class="govuk-width-container beis-navy-blue">
+            <div class="beis-columns beis_columns_text hero-banner">
+
+                <div class="govuk-!-padding-top-8 govuk-!-padding-bottom-4">
+                    <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/Helpto_Growbig_f511980b9d.png"
+                         class="beis-htg-logo" alt="Help to grow logo">
+
+                </div>
+                <h1 class="govuk-heading-l beis-white-text govuk-!-margin-bottom-6">Your account
+                </h1>
+                <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+                <div class="">
+                    <p class="beis-white-text">Register an account to apply for and manage your discount, save product comparisons, and get personalised advice and learning. </p>
+                </div>
+
+                <p class="govuk-!-margin-top-9">
+                    <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/Arrow2_c436b977d0.svg"
+                         class="svgimg beis-link-icon">
+
+                    <a id="link-cmspageviews-herobannercontent-compare-and-get-discount-453"
+                       class="govuk-link govuk-!-font-size-24 hero-links" href="/start"
+                       aria-label="Register an account">
+                        Register an account
+                    </a>
+                </p>
+
+                <p class="beis-white-text">Already registered <a href="/return_user/log-in" class="beis-white-text">sign in</a>.</p>
+
+            </div>
+
+            <div class="govuk-grid-column-one-half beis-navy-blue">
+                <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/HP_29776f74ff.jpg"
+                     width="495px" height="467" class="hero-mobile-image" alt="">
+            </div>
+
+            <div>
+
+            </div>
+
+        </div>
+
+        <!-- end of blue banner-->
+
+
+        <div class="govuk-grid-row govuk-width-container govuk-!-margin-bottom-4 govuk-!-margin-top-6">
+
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-7">About the scheme</h3>
+                <p class="govuk-!-margin-top-2">Learn more about the scheme, how it supports your business and how to apply for a voucher. </p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets//images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20">
+                <a id="three-col-link-read-about-the-scheme-1" href="/about-the-scheme" title="Read about the scheme" class="govuk-link">Read about the scheme</a>
+            </div>
+
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-7">Understanding eligibility  </h3>
+                <p class="govuk-!-margin-top-2">Here you’ll find the full criteria for a successful application, for you and your business.</p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets//images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20">
+                <a id="three-col-link-explore-eligibility-2" href="/eligibility" title="Explore eligibility" class="govuk-link">Explore eligibility</a>
+            </div>
+
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-7">Advice and learning</h3>
+                <p class="govuk-!-margin-top-2">Expand your awareness of software, and explore case studies, action plans and expert articles.</p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets//images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20">
+                <a id="three-col-link-browse-advice-and-learning-3" href="/business-advice-and-learning" title="Browse advice and learning" class="govuk-link">Browse advice and learning</a>
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="top-line beis-black govuk-!-padding-bottom-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="link-list-hero" id="1">
+            <div class="govuk-width-container govuk-!-margin-bottom-2 govuk-!-margin-top-6">
+                <div class="govuk-grid-row beis-columns-same-height">
+                    <div class="govuk-grid-column-full govuk-body">
+                        <h3>Software available for discount</h3>
+                        <a id="hero-link-customer-relationship-management-(crm)-1" href="comparison-tool#crm" title="Customer Relationship Management (CRM)" class="govuk-link">Customer Relationship Management (CRM)</a>
+                        <span class="govuk-link-divider"> | </span>
+                        <a id="hero-link-digital-accounting-8" href="/comparison-tool#accounting" title="Digital Accounting" class="govuk-link">Digital Accounting</a>
+                        <span class="govuk-link-divider"> | </span>
+                        <a id="hero-link-ecommerce-17" href="comparison-tool#ecommerce" title="eCommerce" class="govuk-link">eCommerce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="govuk-grid-row beis-columns-same-height">
+            <div class="govuk-grid-column-full govuk-body">
+                <h3>What do you want to learn about?</h3>
+                <a id="hero-link-choosing-software-12" href="/business-articles-landing-page?tag-ids=47" title="Choosing software" class="govuk-link">Choosing software</a>
+                <span class="govuk-link-divider"> | </span>
+                <a id="hero-link-implementing-software-5" href="/business-articles-landing-page?tag-ids=51" title="Implementing software" class="govuk-link">Implementing software</a>
+                <span class="govuk-link-divider"> | </span>
+                <a id="hero-link-action-plans-3" href="/business-articles-landing-page?tag-ids=46" title="Action plans" class="govuk-link">Action plans</a>
+                <span class="govuk-link-divider"> | </span>
+                <a id="hero-link-6-step-adoption-guides-4" href="/business-articles-landing-page?tag-ids=40" title="6 step adoption guides" class="govuk-link">6 step adoption guides</a>
+                <span class="govuk-link-divider"> | </span>
+                <a id="hero-link-training-your-team-7" href="/business-articles-landing-page?tag-ids=54" title="Training your team" class="govuk-link">Training your team</a>
+                <span class="govuk-link-divider"> | </span>
+                <a id="hero-link-software-explained-15" href="/business-articles-landing-page?tag-ids=53" title="Software explained" class="govuk-link">Software explained</a>
+            </div>
+        </div>
+
+        <div class="govuk-width-container">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <div class="top-line beis-yellow govuk-!-padding-bottom-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns" id="anchor5">
+            <div class="govuk-width-container">
+                <div class="govuk-grid-row beis-columns-same-height">
+                    <div class="govuk-grid-column-one-half">
+                        <div class="govuk-grid-row">
+                            <div class="left-column">
+                                <h2 class="govuk-heading-l govuk-!-padding-top-8 @*@Model.textblocks[0].subheaderColor*@"> Apply for 50% off business software</h2>
+                                <p class="govuk-body" style="text-align:left;">Eligible businesses can get 50% off, up to £5,000 in approved Digital Accounting, Customer Relationship Management and eCommerce software.</p>
+
+
+                                <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/Arrow1_a55c240ba4.svg" class="beis-link-icon" width="23" height="24">
+
+                                <a id="link-cmspageviews-2columns-find-your-software-448" class="govuk-link" href="/comparison-tool" aria-label="Find your software ">
+                                    Find your software
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <div class="govuk-grid-row">
+                            <div class="right-column">
+                                <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/Image5_a5984a6fc3.png" class="hero-mobile-image">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

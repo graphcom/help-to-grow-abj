@@ -1,0 +1,490 @@
+
+{% extends "layout_plain.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .beis-navy-blue {
+    background-color: #1E1A34;
+    display: block;
+    height: 343px;
+  }
+
+  .beis-columns {
+    float: right;
+    color: #ffffff;
+    /*border: 1px solid white;*/
+    width: 300px;
+  }
+
+  .beis_columns_text{
+    width: 60%!important;
+    float:left!important;
+  }
+
+  .beis-white-text{
+    color: #ffffff;
+  }
+
+  .beis_columns_text > div,  .beis_columns_text > h1 ,  .beis_columns_text > p{
+    padding-left:20px
+  }
+
+
+  .govuk-\!-padding-right-8 {
+    padding-right: 50px !important;
+
+  }
+
+
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000
+  }
+
+  /* product css*/
+
+  .beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+  }
+
+  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+  }
+
+  a.govuk-link {
+    font-weight: 700;
+    color: #1D70B8;
+  }
+
+  .govuk-summary-list__key {
+    width: 30%;
+  }
+
+  .govuk-summary-list__product1 .image-mask, .govuk-summary-list__product2 .image-mask, .govuk-summary-list__product3 .image-mask {
+    /*display: inline-block;*/
+    margin: 10px 0;
+  }
+
+  .govuk-summary-list__product1 .product-image, .govuk-summary-list__product2 .product-image, .govuk-summary-list__product3 .product-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .govuk-summary-list__product1 .image-mask img, .govuk-summary-list__product2 .image-mask img, .govuk-summary-list__product3 .image-mask img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+  }
+
+  .beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+  }
+
+  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b1b4b6;
+  }
+
+  .govuk-summary-list {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+
+  .mobile-product-name {
+    display: none;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .govuk-button.primary-big {
+    padding: 15px 25px;
+    background-color: #1C1C78;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-width-container beis-navy-blue">
+      <div class="beis-columns beis_columns_text">
+        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-9" style="margin-top: 3em!important;">
+          More about this software
+        </h1>
+        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+        <div class="">
+          <p class="beis-white-text">View a breakdown of what your selected software includes and any additional services
+            available from the supplier.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="beis-columns">
+        <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/image_28_faa4546409.png"
+             height="343px" width="300px" class="hero-mobile-image">
+      </div>
+
+      <div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="govuk-width-container comparison-tool-details">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="beis-product-details">
+            <div class="product-image">
+              <div class="image-mask">
+                <img src="https://www.manage-your-technology-vendor-account.service.gov.uk/uploads/New logo270522121021.jpg" width="90" alt="">
+              </div>
+              <p class="govuk-heading-m">
+                Sage Business Cloud Accounting - Start
+              </p>
+            </div>
+            <!--<div class="product-links">
+              <a id="link-comparisontoolviews-productdetails-website-sage-business-cloud-accounting-&#45;&#45;start-7" class="govuk-link" href="https://www.sage.com/en-gb/help-to-grow/?utm_source=helptogrow&amp;utm_medium=sitelink&amp;utm_campaign=helptogrowwave1">
+                Visit supplier website<span class="govuk-visually-hidden"> Visit supplier website</span>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+          <p class="govuk-body-l">
+            Digitise and automate your business accounting and bookkeeping with 6 months free. Start is a single-user cloud accounting software perfect for small businesses with simpler accounting needs. <br> <br>Create, send, and track invoices. Capture and keep digital records. Connect bank account and automate reconciliation. Calculate and submit MTD-compliant VAT returns.  <br> <br>As a UK-born company with over 40 years of experience, Sage provides businesses with award-winning 24/7 customer support and a large knowledge network to put you in control of your accounting needs. <br> <br>Note that previous or existing Sage Business Cloud Accounting or Sage Business Cloud Payroll customers are not eligible for the offer and additional discount granted by the scheme.
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
+          <h2 class="govuk-heading-l beis-blue-text govuk-!-margin-bottom-6 govuk-!-margin-top-6">Features, support &amp; compatibility</h2>
+          <p class="govuk-body beis-black-text">
+            This section explains key features, compatibility and the support that’s included as standard.
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Key features
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>Cash Position Management</p>
+                <p>Debt Management</p>
+                <p>Revenue Management</p>
+                <p>Billing and Invoicing</p>
+                <p>Financial Reporting and Analysis</p>
+                <p>Payment Management</p>
+                Automated Bank Reconciliation <br>VAT Calculation <br>VAT Submission
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Deployment &amp; supported platforms
+              </dt>
+              <dd class="govuk-summary-list">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Supported browser - Firefox</p>
+                <p>Mobile - iOS-iPhone</p>
+                <p>Vendor Cloud/SaaS - multi-tenant (public)</p>
+                <p>Supported browser - Edge</p>
+                <p>Supported browser - Chrome</p>
+                <p>Supported browser - Safari</p>
+                <p>Mobile - Android</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Compatibility
+              </dt>
+              <dd class="govuk-summary-list">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                Marketplace Apps (ISV)
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Product support
+              </dt>
+              <dd class="govuk-summary-list">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Email</p>
+                <p>Phone support</p>
+                <p>Chat</p>
+                <p>Web form</p>
+                <p>Social media</p>
+                <p>Forum</p>
+                <p>FAQs</p>
+                <p>Knowledge base</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Training
+              </dt>
+              <dd class="govuk-summary-list">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Webinars</p>
+                <p>Documentation</p>
+                <p>Videos</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
+          <h2 class="govuk-heading-l beis-blue-text">Pricing</h2>
+          <p class="govuk-body beis-black-text">Here you can find details of what you’ll pay before the Help to Grow: Digital discount has been applied, how long you’ll pay this fee for, and if this product includes a free trial.</p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Minimum contract term
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>1 month</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Payment term
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>Per month, fixed number of users</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Minimum number of licences
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>1</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Free trial
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>No</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Price (excl. VAT)
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>
+                  From £12.00, Per month
+                  <span> for 1 user</span>
+                </p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Contract discount
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>6 months at 100% off</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full govuk-!-margin-top-6">
+          <h2 class="govuk-heading-l beis-blue-text">Additional supplier discounts</h2>
+          <p class="govuk-body beis-black-text">These are offered by the software provider.</p>
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row mobile-side-by-side">
+              <dt class="govuk-summary-list__key">
+                Contract discount
+              </dt>
+              <dd class="govuk-summary-list">
+                <p>6 months at 100% off</p>
+              </dd>
+            </div>
+          </dl>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+                        <span class="govuk-heading-l beis-blue-text govuk-!-margin-0">
+                            What’s included
+                        </span>
+            </summary>
+            <div class="govuk-details__text">
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per data storage volume
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per contacts (accounting)
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per integrated bank accounts
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per number of customers or other type of data record - (e.g invoice)
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per bank reconciliation
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per number of snapped receipts
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per number of updates
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per number of API calls
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per purchase invoices
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+              <dl class="govuk-summary-list no-border">
+                <dt class="govuk-summary-list__key">
+                  Per sales bills
+                </dt>
+                <dd class="govuk-summary-list">
+                  <p> Unlimited</p>
+                </dd>
+              </dl>
+
+              <hr aria-hidden="true" id="anchor0" class="beis-grey ">
+            </div>
+          </details>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
+          <a id="link-comparisontoolviews-productdetails-get-discount-sage-business-cloud-accounting---start-7" role="button" class="govuk-button primary-big" data-module="govuk-button" href="/logged_in_account/start">
+            Get discount
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+  {% endblock %}

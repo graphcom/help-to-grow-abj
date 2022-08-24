@@ -1,0 +1,76 @@
+
+{% extends "layout_accounts_subnav.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+
+{% block content %}
+<style>
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000;
+  }
+</style>
+
+<div style="display:none" class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#job-title">Enter your job title or role in the business</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="navigation-breadcrumb" id="12">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-body">
+            <a href="/" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+            <a href="/comparison-tool" id="breadcrumb-link-get-your-software-discount-0">My account</a><span class="next-pointer"> &gt; </span>
+            <a href="#"><span>Manage account</span></a><span class="next-pointer"> > </span> <span>New user details</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="govuk-back-link govuk-!-margin-bottom-8" href="javascript:window.history.back()">Back</a>
+
+    <form class="form" action="phone" method="post">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="job-title">
+          New user details
+        </label></h1>
+
+        <h3 class="govuk-heading-s govuk-!-margin-top-8">What is their job title or role in the business?</h3>
+
+        <label for="job-title" class="govuk-label govuk-!-margin-top-4">Job title or role</label>
+        <span style="display:none" id="job-title" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span>Enter their job title or role
+          </span>
+        <input class="govuk-input" id="job-title-1" name="job-title" type="text" spellcheck="false" autocomplete="name" aria-describedby="job-title-hint">
+
+      </div>
+
+      <button class="govuk-button job-title" data-module="govuk-button">Next</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

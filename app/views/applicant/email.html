@@ -1,0 +1,62 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div style="display:none" class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#email-address">Enter your email address</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <form class="form" action="check_answers" method="post">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="email-address">
+          Your details
+        </label></h1>
+        <span class="govuk-caption-l">Section 2 of 3</span>
+
+        <h3 class="govuk-heading-s govuk-!-margin-top-8">What is your email address?</h3>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="email">
+            Email address
+          </label>
+          <div id="email-hint" class="govuk-hint">
+            We need this to complete registration of your account
+          </div>
+          <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+        </div>
+
+      </div>
+
+      <button class="govuk-button email-address" data-module="govuk-button">Next</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

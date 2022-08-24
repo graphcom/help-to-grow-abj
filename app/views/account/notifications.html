@@ -1,0 +1,225 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .beis-navy-blue-container{
+    display: block;
+    height: 224px;
+    padding-left: 20px;
+  }
+
+  .beis-navy-blue{
+    background-color:#1E1A34;
+  }
+
+  .beis-columns {
+    float:right;
+    color: #ffffff;
+    /*border: 1px solid white;*/
+    width: 300px;
+  }
+
+  .beis_columns_text{
+    width: 60%!important;
+    float:left!important;
+  }
+
+  .beis-white-text{
+    color: #ffffff;
+  }
+
+  .govuk-\!-padding-right-8 {
+    padding-right: 50px !important;
+
+  }
+
+  .hero-banner a.hero-links:link {
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .hero-banner h1{
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000;
+  }
+
+  .tabs a{
+    padding: 10px;
+    border: 0px solid red;
+    font-weight: 700;
+    color: #FFB000;
+    margin-right: 10px;
+  }
+
+  .tabs a.selected{
+    background-color: #fff;
+    text-decoration: none;
+    color: #1E1A34;
+  }
+
+
+  .tabs{
+    padding-bottom: 10px;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000;
+  }
+
+
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="navigation-breadcrumb" id="12">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-body">
+            <a href="/home" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+            <a href="/account/overview" id="breadcrumb-link-get-your-software-discount-0">My account</a><span class="next-pointer"> &gt; </span>
+            <span>Manage account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-width-container beis-navy-blue-container beis-navy-blue">
+      <div class="beis-columns beis_columns_text">
+        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+          Manage your account
+        </h1>
+        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+        <div>
+          <p class="beis-white-text">Get the most out of all the Help to Grow services you use. Your account helps you do more by tracking your progress and offering easy access to your voucher.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-width-container beis-navy-blue govuk-grid-column-full">
+
+      <div class="tabs">
+        <a href="overview">Account overview</a>
+        <a href="manage_users">Manage users</a>
+        <a href="#" class="selected">Notification settings</a>
+        <a href="delete_account">Remove account</a>
+      </div>
+
+    </div>
+
+
+    <div class="govuk-width-container govuk-grid-column-full govuk-!-margin-top-8">
+
+      <h2 class="govuk-heading-m">Notification settings</h2>
+
+      <div class="govuk-!-width-full">
+        <p class="body-text">Select which notifications you want to recieve and how you want to recieve them. Help to Grow: Digital may still send you important notifications about your account and content outside of your preferred notification settings.</p>
+
+        <h2 class="govuk-heading-s govuk-!-margin-top-6">What notifications you receive</h2>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="notifications-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="expiry-alerts" name="expiry-alerts" type="checkbox" value="british" aria-describedby="notifications-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="expiry-alerts">
+                  Voucher expiry alerts
+                </label>
+                <div id="notifications-hint" class="govuk-hint govuk-checkboxes__hint">
+                  Receive an alert when your voucher is close to the expiry date
+                </div>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="new-users" name="new-users" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="new-users">
+                  New users
+                </label>
+                <div id="new-users-1" class="govuk-hint govuk-checkboxes__hint">
+                  Get notified when a new user is added to the account
+                </div>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="progress-reminders" name="progress-reminders" type="checkbox" value="progress-reminders" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="progress-reminders">
+                  Progress reminders
+                </label>
+                <div id="progress-reminders-1" class="govuk-hint govuk-checkboxes__hint">
+                  Be reminded of any saved modules or applications that are incomplete
+                </div>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="new-content" name="progress-reminders" type="checkbox" value="new-content" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="new-content">
+                  New content
+                </label>
+                <div id="new-content-1" class="govuk-hint govuk-checkboxes__hint">
+                  Receive a notification about any new articles or events added
+                </div>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="marketing-consent" name="progress-reminders" type="checkbox" value="marketing-consent" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="marketing-consent">
+                  Marketing consent
+                </label>
+                <div id="marketing-consent-1" class="govuk-hint govuk-checkboxes__hint">
+                  Keep informed about news and events relating to Help to Grow: Digital and consent to holding and processing personal data for marketing communication purposes.
+                </div>
+              </div>
+
+              <h2 class="govuk-heading-m govuk-!-margin-top-4">How you receive notifications</h2>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="email" name="email" type="checkbox" value="marketing-consent" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="email">
+                  Email
+                </label>
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="text" name="text" type="checkbox" value="text" aria-describedby="nationality-item-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="text">
+                  Text
+                </label>
+              </div>
+
+            </div>
+
+
+
+            <form action="#" class="govuk-!-margin-top-8">
+              <button class="govuk-button email-address" data-module="govuk-button">Save notification settings</button>
+            </form>
+
+          </fieldset>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+  {% endblock %}

@@ -1,0 +1,30 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel--confirmation">
+
+      <h1 class="govuk-panel__title">Your account has been created</h1>
+
+    </div>
+
+    <p class="govuk-body">Thank you for verifying your email address. Your account is now ready for you to use.</p>
+    <!-- <p class="govuk-body">We have also sent your software purchase link for <strong>{{ data['select-software'] }}</strong> to: <strong>{{ data['email'] }}</strong></p> -->
+
+    <form action="/account/overview">
+      <button class="govuk-button email-address" data-module="govuk-button">Go to my account</button>
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

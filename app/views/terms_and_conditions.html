@@ -1,0 +1,72 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="terms-policy-update1" action="marketing" method="get">
+
+      <div class="govuk-form-group">
+
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Terms and conditions
+            </h1>
+          </legend>
+          <span style="display:none" id="terms-policy" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span>Select if you have read and accepted the terms and conditions, privacy policy and subsidy control
+            </span>
+          <p class="govuk-body govuk-!-margin-top-2">
+            You need to read and agree to the <a href="terms-and-conditions-detail" class="govuk-link">terms and conditions</a>,
+            <a href="privacy-policy" class="govuk-link">privacy policy</a> and <a href="subsidy-control">subsidy control</a>
+            before you can register your account.
+          </p>
+          <div class="govuk-checkboxes govuk-!-margin-top-9" data-module="govuk-checkboxes">
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="terms-policy-1" name="terms-policy" type="checkbox" value="terms">
+              <label class="govuk-label govuk-checkboxes__label" for="terms-policy">
+                I have read and agree to the terms and conditions, privacy policy, and subsidy control
+              </label>
+            </div>
+            <!--<div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="terms-policy-2" name="terms-policy" type="checkbox" value="privacy">
+              <label class="govuk-label govuk-checkboxes__label" for="terms-policy-2">
+                I have read and accept the privacy policy
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="terms-policy-3" name="terms-policy" type="checkbox" value="privacy">
+              <label class="govuk-label govuk-checkboxes__label" for="terms-policy-3">
+                I have read and accept the subsidy control
+              </label>
+            </div>-->
+
+
+          </div>
+        </fieldset>
+
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Accept and continue
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

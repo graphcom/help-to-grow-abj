@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel--confirmation">
+
+      <h2 class="govuk-panel__body"><strong>Alex Brown</strong> has been removed from your account</h2>
+
+    </div>
+
+    <h3 class="govuk-heading-s govuk-!-margin-top-8">What happens next</h3>
+
+    <p class="govuk-body">
+      We have sent an email to <a href="#" class="govuk-!-font-weight-bold">alex.brown@account.com</a> to confirm they no
+      longer have access to your Help to Grow: Digital account.</p>
+
+    <p class="govuk-body"> You will also receive email confirmation that the user has been removed.</p>
+
+
+
+    <h3 class="govuk-heading-s govuk-!-margin-top-8">Didn’t get the email?</h3>
+
+    <p class="govuk-body">
+      Check your junk or spam folder. If you still do not receive the email, you can:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>enter your email address again</li>
+      <li>ask us to resend the email</li>
+    </ul>
+
+
+    <form action="/account/manage_users">
+      <button class="govuk-button email-address" data-module="govuk-button">Go back to my account</button>
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

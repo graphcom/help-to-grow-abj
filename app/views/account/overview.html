@@ -1,0 +1,237 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .beis-navy-blue-container{
+    display: block;
+    height: 224px;
+    padding-left: 20px;
+  }
+
+  .beis-navy-blue{
+    background-color:#1E1A34;
+  }
+
+  .beis-columns {
+    float:right;
+    color: #ffffff;
+    /*border: 1px solid white;*/
+    width: 300px;
+  }
+
+  .beis_columns_text{
+    width: 60%!important;
+    float:left!important;
+  }
+
+  .beis-white-text{
+    color: #ffffff;
+  }
+
+  .govuk-\!-padding-right-8 {
+    padding-right: 50px !important;
+
+  }
+
+  .hero-banner a.hero-links:link {
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .hero-banner h1{
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000;
+  }
+
+  .tabs a{
+    padding: 10px;
+    border: 0px solid red;
+    font-weight: 700;
+    color: #FFB000;
+    margin-right: 10px;
+  }
+
+  .tabs a.selected{
+    background-color: #fff;
+    text-decoration: none;
+    color: #1E1A34;
+  }
+
+
+  .tabs{
+    padding-bottom: 10px;
+  }
+
+
+
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="navigation-breadcrumb" id="12">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-body">
+            <a href="/home" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+            <a href="/account/overview" id="breadcrumb-link-get-your-software-discount-0">My account</a><span class="next-pointer"> &gt; </span>
+            <span>Manage account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-width-container beis-navy-blue-container beis-navy-blue">
+      <div class="beis-columns beis_columns_text">
+        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+          Manage your account
+        </h1>
+        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+        <div>
+          <p class="beis-white-text">Get the most out of all the Help to Grow services you use. Your account helps you do more by tracking your progress and offering easy access to your voucher.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-width-container beis-navy-blue govuk-grid-column-full">
+
+      <div class="tabs">
+        <a href="#" class="selected">Account overview</a>
+        <a href="manage_users">Manage users</a>
+        <a href="notifications">Notification settings</a>
+        <a href="delete_account">Remove account</a>
+      </div>
+
+    </div>
+
+
+    <div class="govuk-width-container govuk-grid-column-full govuk-!-margin-top-8">
+
+      <h2 class="govuk-heading-m">Your account</h2>
+
+      <p class="body-text">Review the details of your account.</p>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-!-margin-top-8">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Company name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Thyme hand lotion
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="#">
+
+            <span class="govuk-visually-hidden"> company name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Companies House number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['companies-house-number'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Registered office
+        </dt>
+        <dd class="govuk-summary-list__value">
+          72 Guild Street<br>
+          London<br>
+          SE23 6FH
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="directors-dob">
+
+            <span class="govuk-visually-hidden"> licence period</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Full name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          John Smith
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="directors-dob">
+
+            <span class="govuk-visually-hidden"> full name</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Job role or title
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Managing Director
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="directors-dob">
+            <span class="govuk-visually-hidden">job role or title</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          07829368472
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="directors-dob">
+
+            <span class="govuk-visually-hidden">phone number</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          john.smith@account.com
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="directors-dob">
+
+            <span class="govuk-visually-hidden">email address</span>
+          </a>
+        </dd>
+      </div>
+
+    </dl>
+
+    </div>
+
+  </div>
+  {% endblock %}

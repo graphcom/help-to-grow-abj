@@ -1,0 +1,224 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .beis-navy-blue-container{
+    display: block;
+    height: 224px;
+    padding-left: 20px;
+  }
+
+  .beis-navy-blue{
+    background-color:#1E1A34;
+  }
+
+  .beis-columns {
+    float:right;
+    color: #ffffff;
+    /*border: 1px solid white;*/
+    width: 300px;
+  }
+
+  .beis_columns_text{
+    width: 60%!important;
+    float:left!important;
+  }
+
+  .beis-white-text{
+    color: #ffffff;
+  }
+
+  .govuk-\!-padding-right-8 {
+    padding-right: 50px !important;
+
+  }
+
+  .hero-banner a.hero-links:link {
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .hero-banner h1{
+    color: #FFB000;
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000;
+  }
+
+  .tabs a{
+    padding: 10px;
+    border: 0px solid red;
+    font-weight: 700;
+    color: #FFB000;
+    margin-right: 10px;
+  }
+
+  .tabs a.selected{
+    background-color: #fff;
+    text-decoration: none;
+    color: #1E1A34;
+  }
+
+
+  .tabs{
+    padding-bottom: 10px;
+  }
+
+  .govuk-summary-list__key {
+    width: 15%;
+  }
+
+
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="navigation-breadcrumb" id="12">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-body">
+            <a href="/home" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+            <a href="/account/overview" id="breadcrumb-link-get-your-software-discount-0">My account</a><span class="next-pointer"> &gt; </span>
+            <span>Manage account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-width-container beis-navy-blue-container beis-navy-blue">
+      <div class="beis-columns beis_columns_text">
+        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+          Manage your account
+        </h1>
+        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+        <div>
+          <p class="beis-white-text">Get the most out of all the Help to Grow services you use. Your account helps you do more by tracking your progress and offering easy access to your voucher.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="govuk-width-container beis-navy-blue govuk-grid-column-full">
+
+      <div class="tabs">
+        <a href="overview">Account overview</a>
+        <a href="#" class="selected">Manage users</a>
+        <a href="notifications">Notification settings</a>
+        <a href="delete_account">Remove account</a>
+      </div>
+
+    </div>
+
+
+    <div class="govuk-width-container govuk-grid-column-full govuk-!-margin-top-8">
+
+      <h2 class="govuk-heading-m">Manage account users</h2>
+
+      <div class="govuk-!-width-two-thirds">
+        <p class="body-text">See all the users associated with your business account. Add and remove people or change your account details.</p>
+      </div>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-!-margin-top-8">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            John Smith
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Managing Director
+          </dd>
+          <dd class="govuk-summary-list__value">
+            07829368472
+          </dd>
+          <dd class="govuk-summary-list__value">
+            john.smith@account.com
+          </dd>
+          <dd class="govuk-summary-list__value">
+            <a href="/edit_user/details" class="govuk-!-margin-right-2 govuk-!-margin-left-1">Change</a>
+            <a href="/delete_user/are_you_sure">Remove</a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Alex Brown
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Product Owner
+          </dd>
+          <dd class="govuk-summary-list__value">
+            07732846979
+          </dd>
+          <dd class="govuk-summary-list__value">
+            jalex.brown@account.com
+          </dd>
+          <dd class="govuk-summary-list__value">
+            <span class="govuk-!-margin-right-4"></span>
+            <a href="#" class="govuk-!-margin-left-9">Remove</a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Sam Jones
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Technical Director
+          </dd>
+          <dd class="govuk-summary-list__value">
+            07982736481
+          </dd>
+          <dd class="govuk-summary-list__value">
+            sam.jones@account.com
+          </dd>
+          <dd class="govuk-summary-list__value">
+            <span class="govuk-!-margin-right-4"></span>
+            <a href="#" class="govuk-!-margin-left-9">Remove</a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Ella Marks
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sales Director
+          </dd>
+          <dd class="govuk-summary-list__value">
+            07793726839
+          </dd>
+          <dd class="govuk-summary-list__value">
+            ella.marks@account.com
+          </dd>
+          <dd class="govuk-summary-list__value">
+            <span class="govuk-!-margin-right-4"></span>
+            <a href="#" class="govuk-!-margin-left-9">Remove</a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <form action="/new_user/start">
+        <button class="govuk-button button">
+          Add a new user
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+  {% endblock %}

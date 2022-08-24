@@ -1,0 +1,58 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div style="display:none" class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <!-- <a href="#select-existing-customer">Select yes if you are an existing customer of {{ data['select-software'] }}</a> -->
+        <a href="#select-existing-customer">Enter your registered business name</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="role" method="post">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="business-name">
+          About your business
+        </label></h1>
+        <span class="govuk-caption-l">Section 1 of 3</span>
+
+        <h3 class="govuk-heading-s govuk-!-margin-top-4">What is the registered name of your business?</h3>
+        <span style="display:none" id="business-name" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span>Enter the registered name of your business.
+          </span>
+        <input class="govuk-input" id="business-name-1" name="business-name" type="text" spellcheck="false" autocomplete="name" aria-describedby="business-name-hint">
+
+      </div>
+
+      <button class="govuk-button applicant-name" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+
+
+</div>
+
+{% endblock %}

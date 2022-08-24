@@ -1,0 +1,475 @@
+
+{% extends "layout_plain.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .beis-navy-blue {
+    background-color: #1E1A34;
+    display: block;
+    height: 343px;
+  }
+
+  .beis-columns {
+    float: right;
+    color: #ffffff;
+    /*border: 1px solid white;*/
+    width: 300px;
+  }
+
+  .beis_columns_text{
+    width: 60%!important;
+    float:left!important;
+  }
+
+  .beis-white-text{
+    color: #ffffff;
+  }
+
+  .beis_columns_text > div,  .beis_columns_text > h1 ,  .beis_columns_text > p{
+    padding-left:20px
+  }
+
+
+  .govuk-\!-padding-right-8 {
+    padding-right: 50px !important;
+
+  }
+
+
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
+    font-weight: 700;
+  }
+
+  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
+    color: #000
+  }
+
+  /* product css*/
+
+  .beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+  }
+
+  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+  }
+
+  a.govuk-link {
+    font-weight: 700;
+    color: #1D70B8;
+  }
+
+  .govuk-summary-list__key {
+    width: 30%;
+  }
+
+  .govuk-summary-list__product1 .image-mask, .govuk-summary-list__product2 .image-mask, .govuk-summary-list__product3 .image-mask {
+    /*display: inline-block;*/
+    margin: 10px 0;
+  }
+
+  .govuk-summary-list__product1 .product-image, .govuk-summary-list__product2 .product-image, .govuk-summary-list__product3 .product-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .govuk-summary-list__product1 .image-mask img, .govuk-summary-list__product2 .image-mask img, .govuk-summary-list__product3 .image-mask img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+  }
+
+  .beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+  }
+
+  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b1b4b6;
+  }
+
+  .govuk-summary-list {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+
+  .mobile-product-name {
+    display: none;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .govuk-button.primary-big {
+    padding: 15px 25px;
+    background-color: #1C1C78;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    width:100%
+  }
+
+</style>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+    <div class="govuk-width-container beis-navy-blue">
+      <div class="beis-columns beis_columns_text">
+        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-9">
+          Get your software discount
+        </h1>
+        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
+        <div class="">
+          <p class="beis-white-text">Explore the software available including cost, features, and any
+            additional support
+            available.
+          </p>
+          <p class="beis-white-text">The Help to Grow: Digital discount is subject to business eligibility.
+            <a href="#" style="color:#fff">Check if you are eligible here</a> .
+          </p>
+        </div>
+
+      </div>
+
+      <div class="beis-columns">
+        <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/image_28_faa4546409.png"
+             height="343px" width="300px" class="hero-mobile-image">
+      </div>
+
+      <div>
+
+      </div>
+
+    </div>
+
+
+    <div class="govuk-width-container govuk-!-padding-top-6">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">Digital accounting software</h1>
+          <dl class="beis-summary-product-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Product
+              </dt>
+              <dd class="govuk-summary-list__product1">
+                <div class="product-image">
+                  <div class="image-mask">
+                    <img src="https://www.manage-your-technology-vendor-account.service.gov.uk/uploads/New logo270522121021.jpg" width="90" alt="">
+                  </div>
+                  <a id="link-comparisontoolviews-compareproducts-sage-business-cloud-accounting---start-7" class="govuk-link" href="https://www.sage.com/en-gb/help-to-grow/?utm_source=helptogrow&amp;utm_medium=sitelink&amp;utm_campaign=helptogrowwave1">
+                    Sage Business Cloud Accounting - Start
+                    <span class="govuk-visually-hidden">
+                                        Sage Business Cloud Accounting - Start
+                                    </span>
+                  </a>
+                </div>
+              </dd>
+              <dd class="govuk-summary-list__product2">
+                <div class="product-image">
+                  <div class="image-mask">
+                    <img src="https://www.manage-your-technology-vendor-account.service.gov.uk/uploads/quickbooks-110x110.jpg" width="90" alt="">
+                  </div>
+                  <a id="link-comparisontoolviews-compareproducts-quickbooks-online---plus-16" class="govuk-link" href="https://quickbooks.intuit.com/uk/?ds_rl=1263531&amp;cid=ppc_G_QB_UK_GGL_B_Quickbooks_LongTail_Exact_Search_ALL_quickbooks+pricing_txt&amp;ds_rl=1263531&amp;gclid=CjwKCAjwmqKJBhAWEiwAMvGt6ADDvLbTKQWbEQO3FODl1-XCirEhthyC5OJ0s4JFTCxE_5orgdJZgRoC67EQAvD_BwE&amp;gclsrc=aw.ds">
+                    QuickBooks Online - Plus
+                    <span class="govuk-visually-hidden">
+                                        QuickBooks Online - Plus
+                                    </span>
+                  </a>
+                </div>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
+          <h2 class="govuk-heading-m beis-blue-text govuk-!-margin-bottom-6 govuk-!-margin-top-6">Features and support</h2>
+          <p class="govuk-body beis-black-text">
+            This section explains key features, compatibility and the support that’s included as standard.
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Key features
+              </dt>
+              <dd class="govuk-summary-list__product1">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Cash Position Management</p>
+                <p>Debt Management</p>
+                <p>Revenue Management</p>
+                <p>Billing and Invoicing</p>
+                <p>Financial Reporting and Analysis</p>
+                <p>Payment Management</p>
+                <p>Automated Bank Reconciliation
+                  VAT Calculation
+                  VAT Submission</p>
+              </dd>
+              <dd class="govuk-summary-list__product2">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>Currency Management</p>
+                <p>Cash Position Management</p>
+                <p>Debt Management</p>
+                <p>Expense Management</p>
+                <p>Supplier Management</p>
+                <p>Billing and Invoicing</p>
+                <p>Financial Reporting and Analysis</p>
+                <p>Payment Management</p>
+                <p>- Connect banks
+                  - Snap &amp; sort receipts
+                  - Track mileage
+                  - Check for VAT errors
+                  - Calculate &amp; submit CIS
+                  - Payroll &amp; time tracking (additional cost)
+                  - Additional 3rd party apps (additional cost)</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Platform/compatibility
+              </dt>
+              <dd class="govuk-summary-list__product1">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Supported browser - Firefox</p>
+                <p>Mobile - iOS-iPhone</p>
+                <p>Vendor Cloud/SaaS - multi-tenant (public)</p>
+                <p>Supported browser - Edge</p>
+                <p>Supported browser - Chrome</p>
+                <p>Supported browser - Safari</p>
+                <p>Mobile - Android</p>
+              </dd>
+              <dd class="govuk-summary-list__product2">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>Supported browser - Edge</p>
+                <p>Supported browser - Chrome</p>
+                <p>Supported browser - Safari</p>
+                <p>Supported browser - Firefox</p>
+                <p>Mobile - Android</p>
+                <p>Mobile - iOS-iPhone</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Product support
+              </dt>
+              <dd class="govuk-summary-list__product1">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Email</p>
+                <p>Phone support</p>
+                <p>Chat</p>
+                <p>Web form</p>
+                <p>Social media</p>
+                <p>Forum</p>
+                <p>FAQs</p>
+                <p>Knowledge base</p>
+              </dd>
+              <dd class="govuk-summary-list__product2">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>Phone support</p>
+                <p>Chat</p>
+                <p>Forum</p>
+                <p>FAQs</p>
+                <p>Knowledge base</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Training support
+              </dt>
+              <dd class="govuk-summary-list__product1">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Webinars</p>
+                <p>Documentation</p>
+                <p>Videos</p>
+              </dd>
+              <dd class="govuk-summary-list__product2">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>Videos</p>
+                <p>Live online</p>
+                <p>Webinars</p>
+                <p>Documentation</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
+          <h2 class="govuk-heading-m beis-blue-text">Pricing</h2>
+          <p class="govuk-body beis-black-text">Here you can find details of what you’ll pay before the Help to Grow: Digital discount has been applied, how long you’ll pay this fee for, and if this product includes a free trial.</p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Minimum contract term
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>1 month</p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>1 month</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Payment term
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>Per month, fixed number of users</p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>Per month, fixed number of users</p>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Minimum number of licences
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>1</p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>1</p>
+              </dd>
+            </div>
+
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Free trial
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>No</p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>No</p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Price (excl. VAT)
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>
+                  From £12.00, Per month
+                  <span> for 1 user</span>
+                </p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>
+                  From £32.00, Per month
+                  <span> for 5 users</span>
+                </p>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contract discount
+              </dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <p>6 months at 100% off</p>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <p>12 months at 75% off</p>
+              </dd>
+            </div>
+
+
+
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key"></dt>
+              <dd class="govuk-summary-list__product1 mobile-side-by-side">
+                <p class="mobile-product-name">Sage Business Cloud Accounting - Start</p>
+                <a id="link-comparisontoolviews-compareproducts-see-features" aria-label="See features of Sage Business Cloud Accounting - Start" role="button" class="govuk-button primary-big" data-module="govuk-button" href="product_detail">
+                  See features
+                </a>
+              </dd>
+              <dd class="govuk-summary-list__product2 mobile-side-by-side">
+                <p class="mobile-product-name">QuickBooks Online - Plus</p>
+                <a id="link-comparisontoolviews-compareproducts-see-features" aria-label="See features of QuickBooks Online - Plus" role="button" class="govuk-button primary-big" data-module="govuk-button" href="product_detail">
+                  See features
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  {% endblock %}

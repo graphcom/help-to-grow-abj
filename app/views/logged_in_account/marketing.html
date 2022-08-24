@@ -1,0 +1,94 @@
+
+{% extends "layout_plain.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form action="check_discount" method="get">
+
+      <div class="govuk-form-group">
+
+        <div class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Would you like to receive marketing information?
+            </h1>
+          </legend>
+          <span style="display:none" id="terms-policy" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span>Select if you have read and accepted the terms and conditions, privacy policy and subsidy control
+            </span>
+
+          <p>
+            From time to time, the Department for Business Energy & Industrial Strategy (BEIS) may contact you to:
+            <br>
+          </p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>keep you informed about news, updates and events relating to Help to Grow: Digital</li>
+            <li>tell you about past and current applications for discounts, including support when a discount expires</li>
+            <li>offer you support with your discount applications and redemptions, and software purchases</li>
+          </ul>
+
+
+          <h3 class="govuk-heading-m">Choose how you would like to receive this information.</h3>
+
+          <p>This is optional. If you do not want to receive updates, select <strong>Continue</strong> . </p>
+
+        </div>
+
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="optional-email" name="marketing-option" type="checkbox" value=" Email ">
+            <label class="govuk-label govuk-checkboxes__label" for="optional-email">
+              Email (optional)
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="optional-phone" name="marketing-option" type="checkbox" value=" Phone ">
+            <label class="govuk-label govuk-checkboxes__label" for="optional-phone">
+              Phone number (optional)
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="optional-none" name="marketing-option" type="checkbox" value=" None ">
+            <label class="govuk-label govuk-checkboxes__label" for="optional-none">
+              None of the above (optional)
+            </label>
+          </div>
+        </fieldset>
+
+        <div>
+          <br>
+          <p>If you do not want to receive updates, select 'Continue'</p>
+        </div>
+
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Accept
+      </button>
+
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Continue
+      </button>
+
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

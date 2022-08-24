@@ -1,0 +1,72 @@
+
+{% extends "layout_accounts.html" %}
+
+{% block pageTitle %}
+  Help to Grow: Digital - Digital Accounts
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <h1 class="govuk-heading-l">Check your software discount application</h1>
+
+    <p class="govuk-body"> If you’re happy that this information is correct, you can save it and create your account.</p>
+
+    <h3 class="govuk-heading-m">About your business</h3>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Software name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <!-- {{ data['select-software'] }} -->
+          <!--Insert business name-->
+          Cashoo
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="name">
+            Change
+            <span class="govuk-visually-hidden">Business name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Price (excl. VAT)
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <!-- {{ data['select-software'] }} -->
+          <!--insert companies house number-->
+          From £12.00,  per month for 1 user
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+    </dl>
+
+
+    <form action="confirmation" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Accept
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}
