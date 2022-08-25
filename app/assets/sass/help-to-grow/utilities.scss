@@ -259,6 +259,26 @@ a.govuk-link:link, a.govuk-link:visited {
     padding: 20px;
 }
 
+
+
+
+
+.comparison-tool-details div.product-image {
+    display: flex!important;
+    align-items: center!important;
+    width:auto!important;
+    margin: 0!important;
+}
+
+.comparison-tool-details div.product-image p {
+    margin-left:20px!important;
+}
+
+.comparison-tool-details .product-links {
+    padding: 0 0 40px 0;
+}
+
+
 .product-image {
     margin: 0 40px;
     width: 120px;
@@ -290,6 +310,18 @@ a.govuk-link:link, a.govuk-link:visited {
     justify-content: center;
 }
 
+
+.comparison-tool-details .image-mask {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+
+
 .govuk-button.compare {
     background-color: #FFFFFF;
     color: #0B0C0C;
@@ -319,6 +351,116 @@ a.govuk-link:link, a.govuk-link:visited {
 
 .compare-btn {
     margin: 10px 0 0 0;
+}
+
+/* product css*/
+
+.beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+}
+
+a.govuk-link {
+    font-weight: 700;
+    color: #1D70B8;
+}
+
+.govuk-summary-list__key {
+    width: 30%;
+}
+
+.govuk-summary-list__product1 .image-mask, .govuk-summary-list__product2 .image-mask, .govuk-summary-list__product3 .image-mask {
+    /*display: inline-block;*/
+    margin: 10px 0;
+}
+
+.govuk-summary-list__product1 .product-image, .govuk-summary-list__product2 .product-image, .govuk-summary-list__product3 .product-image {
+    width: 100%;
+    text-align: center;
+}
+
+.govuk-summary-list__product1 .image-mask img, .govuk-summary-list__product2 .image-mask img, .govuk-summary-list__product3 .image-mask img {
+    width: 110px;
+    height: 110px;
+}
+
+.govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B4B6;
+}
+
+.beis-summary-product-list {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    display: table-cell;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b1b4b6;
+}
+
+.govuk-summary-list {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+
+.mobile-product-name {
+    display: none;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.govuk-button.primary-big {
+    padding: 15px 25px;
+    background-color: #1C1C78;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    width:100%
+}
+
+.govuk-button.primary {
+    padding: 15px 25px;
+    background-color: #1C1C78;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+
+dd p{
+    margin-bottom: 0;
 }
 
 

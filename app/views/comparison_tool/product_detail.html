@@ -1,186 +1,73 @@
 
-{% extends "layout_plain.html" %}
+{% extends "layout_comparison_tool.html" %}
 
 {% block pageTitle %}
-Help to Grow: Digital - Digital Accounts
+Help to Grow: Digital - Learning Platform
 {% endblock %}
 
-{% block beforeContent %}
-<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
-{% endblock %}
 
 {% block content %}
 
 <style>
-  .beis-navy-blue {
-    background-color: #1E1A34;
-    display: block;
-    height: 343px;
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
   }
-
-  .beis-columns {
-    float: right;
-    color: #ffffff;
-    /*border: 1px solid white;*/
-    width: 300px;
-  }
-
-  .beis_columns_text{
-    width: 60%!important;
-    float:left!important;
-  }
-
-  .beis-white-text{
-    color: #ffffff;
-  }
-
-  .beis_columns_text > div,  .beis_columns_text > h1 ,  .beis_columns_text > p{
-    padding-left:20px
-  }
-
-
-  .govuk-\!-padding-right-8 {
-    padding-right: 50px !important;
-
-  }
-
-
-
-  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a:first-child {
-    font-weight: 700;
-  }
-
-  .navigation-breadcrumb .govuk-width-container .govuk-grid-column-full a {
-    color: #000
-  }
-
-  /* product css*/
-
-  .beis-summary-product-list {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    font-size: 1.1875rem;
-    line-height: 1.3157894737;
-    font-family: "GDS Transport", arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-  }
-
-  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
-    display: table-cell;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #B1B4B6;
-  }
-
-  a.govuk-link {
-    font-weight: 700;
-    color: #1D70B8;
-  }
-
-  .govuk-summary-list__key {
-    width: 30%;
-  }
-
-  .govuk-summary-list__product1 .image-mask, .govuk-summary-list__product2 .image-mask, .govuk-summary-list__product3 .image-mask {
-    /*display: inline-block;*/
-    margin: 10px 0;
-  }
-
-  .govuk-summary-list__product1 .product-image, .govuk-summary-list__product2 .product-image, .govuk-summary-list__product3 .product-image {
-    width: 100%;
-    text-align: center;
-  }
-
-  .govuk-summary-list__product1 .image-mask img, .govuk-summary-list__product2 .image-mask img, .govuk-summary-list__product3 .image-mask img {
-    width: 110px;
-    height: 110px;
-  }
-
-  .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
-    display: table-cell;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #B1B4B6;
-  }
-
-  .beis-summary-product-list {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    font-size: 1.1875rem;
-    line-height: 1.3157894737;
-    font-family: "GDS Transport", arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-  }
-
-  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-    display: table-cell;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #b1b4b6;
-  }
-
-  .govuk-summary-list {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.3157894737;
-  }
-
-  .mobile-product-name {
-    display: none;
-    font-weight: 700;
-    padding: 10px 0;
-  }
-
-  .govuk-button.primary-big {
-    padding: 15px 25px;
-    background-color: #1C1C78;
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-  }
-
 </style>
+
+
+<div class="navigation-breadcrumb" id="12">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full govuk-body" style="padding: 0">
+        <a href="/home" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+        <a href="/comparison_tool">Get your software discount</a> <span class="next-pointer"> &gt; </span> Digital accounting software
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-width-container js-go-back-link-container" style="display: block;">
+  <div class="govuk-grid-row">
+    <div class="inner-width-container">
+      <a id="link-comparisontoolviews-compare-productdetails-back-link" href="javascript:history.go(-1)" class="govuk-back-link" data-tabclick="true">Back</a>
+    </div>
+  </div>
+</div>
+
+<div class="landing-page-hero columns beis-navy-blue">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row beis-columns-same-height">
+      <div class="govuk-grid-column-one-half-text landing-page-hero-left">
+        <div class="govuk-grid-row">
+          <div class="left-column beis-white-text">
+            <h1 class="govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+              Get your software discount
+            </h1>
+            <div class="govuk-body beis-white-text govuk-!-padding-right-8">
+              <p>Explore the software available including cost, features, and any additional support available.</p>
+              <p>The Help to Grow: Digital discount is subject to business eligibility. <a href="#" class="beis-white-text">Check if you are eligible here.</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half landing-page-hero-right">
+        <div class="govuk-grid-row">
+          <div class="right-column govuk-!-padding-right-3 landing-page-hero-img">
+            <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/image_28_faa4546409.png" class="hero-mobile-image-landscape" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-
-    <div class="govuk-width-container beis-navy-blue">
-      <div class="beis-columns beis_columns_text">
-        <h1 class="govuk-!-padding-right-8 govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-9" style="margin-top: 3em!important;">
-          More about this software
-        </h1>
-        <!--        <div class="govuk-body govuk-!-padding-right-8 govuk-!-width-one-half">-->
-        <div class="">
-          <p class="beis-white-text">View a breakdown of what your selected software includes and any additional services
-            available from the supplier.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="beis-columns">
-        <img src="https://cms.learn-to-grow-your-business.service.gov.uk/uploads/image_28_faa4546409.png"
-             height="343px" width="300px" class="hero-mobile-image">
-      </div>
-
-      <div>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="govuk-width-container comparison-tool-details">
+    <div class="inner-width-container comparison-tool-details">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
           <div class="beis-product-details">
@@ -192,11 +79,11 @@ Help to Grow: Digital - Digital Accounts
                 Sage Business Cloud Accounting - Start
               </p>
             </div>
-            <!--<div class="product-links">
-              <a id="link-comparisontoolviews-productdetails-website-sage-business-cloud-accounting-&#45;&#45;start-7" class="govuk-link" href="https://www.sage.com/en-gb/help-to-grow/?utm_source=helptogrow&amp;utm_medium=sitelink&amp;utm_campaign=helptogrowwave1">
+            <div class="product-links">
+              <a id="link-comparisontoolviews-productdetails-website-sage-business-cloud-accounting---start-7" class="govuk-link" href="https://www.sage.com/en-gb/help-to-grow/?utm_source=helptogrow&amp;utm_medium=sitelink&amp;utm_campaign=helptogrowwave1">
                 Visit supplier website<span class="govuk-visually-hidden"> Visit supplier website</span>
               </a>
-            </div>-->
+            </div>
           </div>
         </div>
       </div>
@@ -477,7 +364,7 @@ Help to Grow: Digital - Digital Accounts
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds-from-desktop comparison-tool">
-          <a id="link-comparisontoolviews-productdetails-get-discount-sage-business-cloud-accounting---start-7" role="button" class="govuk-button primary-big" data-module="govuk-button" href="/logged_in_account/start">
+          <a id="link-comparisontoolviews-productdetails-get-discount-sage-business-cloud-accounting---start-7" role="button" class="govuk-button primary" data-module="govuk-button" href="/logged_in_account/start">
             Get discount
           </a>
         </div>
