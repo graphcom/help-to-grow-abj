@@ -11,6 +11,11 @@
     border-bottom: 10px solid #FFB000;
 }
 
+
+.govuk-header__navigation-item--active a:link, .govuk-header__navigation-item--active a:hover, .govuk-header__navigation-item--active a:visited {
+    color: #FFB000;
+}
+
 .govuk-footer__copyright-logo {
     background-image: url(../images/govuk-crest.png);
 }
@@ -227,7 +232,7 @@ a.govuk-link:link, a.govuk-link:visited {
 }
 
 .beis-yellow {
-    background-color: #FFB000;
+    background-color: #FFB000!important;
 }
 
 .hero-mobile-image{
