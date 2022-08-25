@@ -161,7 +161,7 @@
 }
 
 .beis-white-text, .beis-white-text p {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 
 
@@ -180,6 +180,11 @@ a.govuk-link:link, a.govuk-link:visited {
 
 .beis-yellow {
     background-color:#FFB000;
+}
+
+.govuk-header-yellow-line {
+    border-bottom: 10px solid #FFB000;
+    //margin: 0 15px;
 }
 
 .three-column-heroes .govuk-grid-column-one-third h3{
@@ -224,6 +229,11 @@ a.govuk-link:link, a.govuk-link:visited {
 
 .hero-mobile-image{
     width: 450px;
+}
+
+.hero-mobile-image-landscape{
+    max-height: 100%;
+    width: auto!important;
 }
 
 
