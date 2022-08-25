@@ -237,4 +237,88 @@ a.govuk-link:link, a.govuk-link:visited {
 }
 
 
+/* product css*/
+
+.compare-products {
+    text-align: right;
+}
+
+.top-line{
+    background: #1C1C78;
+    height: 10px;
+    margin: 10px 0 0 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 1px solid rgba(28, 28, 120, 0.3);
+    padding: 20px;
+}
+
+.product-image {
+    margin: 0 40px;
+    width: 120px;
+    text-align: center;
+}
+
+.govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+}
+
+a.govuk-link:link, a.govuk-link:visited {
+    font-weight: 700;
+    color: #1D70B8;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-actions {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.govuk-button.compare {
+    background-color: #FFFFFF;
+    color: #0B0C0C;
+    border-color: #000000;
+    border-width: 1px;
+    text-decoration: none;
+    width: 9.063rem;
+}
+
+.govuk-button.discount {
+    background-color: #1C1C78;
+    color: #FFFFFF !important;
+    border-color: #000000;
+    border-width: 1px;
+    width: 9.063rem;
+}
+
+
+.govuk-button:link, .govuk-button:visited, .govuk-button:active, .govuk-button:hover {
+    text-decoration: none;
+}
+
+.govuk-button.primary {
+    background-color: #24249C;
+    color: #fff;
+}
+
+.compare-btn {
+    margin: 10px 0 0 0;
+}
+
 
