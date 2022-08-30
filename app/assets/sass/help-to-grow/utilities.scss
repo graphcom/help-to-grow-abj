@@ -56,6 +56,19 @@
     font-display:fallback
 }
 
+h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
+    color: #1D3A64;
+}
+
+.resources .resources-intro-text, .resources-intro-text{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.columns .right-column img {
+    margin: 30px 0;
+}
+
 .govuk-template { background-color: #f3f2f1; }
 .govuk-footer { background: #f3f2f1; }
 
@@ -144,7 +157,7 @@
     float: left !important;
 }
 
-.inner-width-container{
+.inner-width-container, .inner-width-container .govuk-grid-column-two-thirds, #feedback-prompt .govuk-width-container{
     max-width: 960px;
     margin: auto;
     padding:0!important;
@@ -507,4 +520,47 @@ dd p{
     margin-bottom: 0;
 }
 
+/* feedback prompt */
+
+.beis-navy-blue .beis-white-positive, .feedback-prompt .beis-white-positive {
+    color: #fff;
+    background: transparent;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.feedback-prompt .feedback-no-container, .feedback-prompt .report-poroblem-container, .feedback-prompt .message {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.feedback-prompt .wrapper-left .govuk-button {
+    margin: 5px 10px;
+    min-width: 100px;
+}
+
+.feedback-prompt .message {
+    margin: 30px 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.feedback-prompt .feedback-bg-color {
+    background: #1C1C78;
+    min-height: 10px;
+}
+
+.feedback-prompt .govuk-grid-row, .feedback-prompt .wrapper-left, .feedback-prompt .wrapper-right {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-prompt .wrapper-left {
+    justify-content: flex-end;
+}
 
