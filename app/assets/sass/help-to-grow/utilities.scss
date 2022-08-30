@@ -89,6 +89,7 @@
 }
 
 
+
 .hero-banner .beis-columns-same-height {
     display: flex;
 }
@@ -146,6 +147,7 @@
 .inner-width-container{
     max-width: 960px;
     margin: auto;
+    padding:0!important;
 }
 
 .link-list-hero {
@@ -239,9 +241,25 @@ a.govuk-link:link, a.govuk-link:visited {
     width: 450px;
 }
 
+.hero-mobile-image-sml{
+    width: 100%;
+}
+
+
+
 .hero-mobile-image-landscape{
     max-height: 100%;
     width: auto!important;
+}
+
+
+.beis-grey {
+    background-color: #B1B4B6;
+}
+
+.search-article-listing h3.govuk-heading-l {
+    font-size: 1.5em;
+    height: 40px;
 }
 
 
@@ -258,6 +276,13 @@ a.govuk-link:link, a.govuk-link:visited {
     display: block;
     box-sizing: border-box;
 }
+
+
+.search-article-listing .thin-line {
+    padding-top: 1px;
+}
+
+
 
 .frame {
     display: flex;
@@ -375,6 +400,17 @@ a.govuk-link:link, a.govuk-link:visited {
     font-weight: 400;
 }
 
+.beis-underline {
+    padding-top: 0.625rem !important;
+    background-color: #FFB000;
+    margin-bottom: 0.625rem !important;
+    margin-left: -1.25rem;
+}
+
+.govuk-details__summary {
+    padding: 20px;
+}
+
 .govuk-summary-list__product1, .govuk-summary-list__product2, .govuk-summary-list__product3 {
     display: table-cell;
     padding-top: 10px;
@@ -457,10 +493,10 @@ a.govuk-link {
 }
 
 .govuk-button.primary {
-    padding: 15px 25px;
+    //padding: 15px 25px;
     background-color: #1C1C78;
-    font-size: 22px;
-    font-weight: 700;
+    //font-size: 22px;
+    //font-weight: 700;
     color: #fff;
 }
 
