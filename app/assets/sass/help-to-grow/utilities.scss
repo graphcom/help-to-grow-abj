@@ -1,3 +1,7 @@
+main{
+    padding-bottom: 0!important;
+}
+
 .beis-htg-logo {
     width:400px;
 }
@@ -64,10 +68,14 @@ h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
     font-size: 24px;
     line-height: 32px;
 }
-/*
-.columns .right-column img {
-    margin: 30px 0;
-}*/
+
+.columns .right-column img{
+    padding: 30px 0!important;
+}
+
+.beis-navy-blue .landing-page-hero-right .right-column img{
+    padding:0!important;
+}
 
 .govuk-template { background-color: #f3f2f1; }
 .govuk-footer { background: #f3f2f1; }
@@ -166,6 +174,20 @@ h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
     margin: auto;
     padding:0!important;
 }
+
+.feedback-prompt .wrapper-left .govuk-button-group, .feedback-prompt .wrapper-right {
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:auto!important;
+}
+
+.feedback-prompt .wrapper-right .govuk-button {
+    margin: 5px 10px;
+}
+
 
 .link-list-hero {
     font-weight: lighter;
