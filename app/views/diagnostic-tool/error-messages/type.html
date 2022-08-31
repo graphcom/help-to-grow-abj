@@ -1,0 +1,133 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+<form class="form" method="post">
+<div class="inner-width-container">
+  <div class="govuk-error-summary govuk-!-padding-top-6" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      Please make a selection
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-error">Answer the question below to continue</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">What you need & want to achieve
+        </h1>
+      </div>
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading beis-blue-text">
+              What type of software are you looking for?
+            </h2>
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Answer the question below to continue
+          </p>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="Customer relationship management (CRM)">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                Customer relationship management (CRM)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="eCommerce">
+              <label class="govuk-label govuk-checkboxes__label" for="type-2">
+                eCommerce
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type-3" name="type" type="checkbox" value="Digital accounting">
+              <label class="govuk-label govuk-checkboxes__label" for="type-3">
+                Digital accounting
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="else" name="else" type="checkbox" value="else">
+              <label class="govuk-label govuk-checkboxes__label" for="else">
+                Something else
+              </label>
+            </div>
+            <div id="more-detail" class="govuk-!-padding-left-9" style="display:none;">
+              <div id="more-detail-hint" class="govuk-hint">
+                If your software type isn't listed here, please tell us the type of software you're interested in.
+              </div>
+              <textarea class="govuk-textarea" id="more-detail-1" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+        <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/need"> Back </button>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+        </div>
+
+    </div>
+  </div>
+</div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $( "#else" ).click(function() {
+      $("#more-detail").toggle();
+    });
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+
+      if ($('input:checkbox').is(':checked') == false){
+        $('.form').attr('action', '/diagnostic-tool/error-messages/type');
+      }
+
+      else if ($.trim($('#more-detail-1').val()).length > 1){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
+
+      else if ($('input:checkbox[name=else]').is(':checked') == true ) {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/type2');
+      }
+
+      else if ($('input:checkbox[name=type]').is(':checked') == true){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
+    });
+
+  });
+
+</script>
+
+
+{% endblock %}

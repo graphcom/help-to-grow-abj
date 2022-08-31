@@ -1,0 +1,117 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+<form class="form" method="post">
+<div class="inner-width-container">
+  <div class="govuk-error-summary govuk-!-padding-top-6" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      Please make a selection
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-error">Answer the question below to continue</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">Your IT set up
+        </h1>
+      </div>
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading beis-blue-text">
+              What kind of IT support do you have in place?
+            </h1>
+          </legend>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Answer the question below to continue
+          </p>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="support" name="support" type="radio" value="We have someone / an in-house team">
+              <label class="govuk-label govuk-radios__label" for="support">
+                We have someone / an in-house team
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="support-2" name="support" type="radio" value="We have an external team who support us">
+              <label class="govuk-label govuk-radios__label" for="support-2">
+                We have an external team who support us
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="support-3" name="support" type="radio" value="We rely on supplier support">
+              <label class="govuk-label govuk-radios__label" for="support-3">
+                We rely on supplier support
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="support-4" name="support" type="radio" value="We don't have any support in place">
+              <label class="govuk-label govuk-radios__label" for="support-4">
+                We don't have any support in place
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="support-5" name="support" type="radio" value="Friends / family help when we need it">
+              <label class="govuk-label govuk-radios__label" for="support-5">
+                Friends / family help when we need it
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/software-use"> Back </button>
+         
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      
+      if ($('input:radio[name=support]').is(':checked')){
+        $('.form').attr('action', '/diagnostic-tool/storage');
+      } else {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/support');
+      }
+    });
+
+  });
+
+</script>
+
+
+{% endblock %}

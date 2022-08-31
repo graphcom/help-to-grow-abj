@@ -1,0 +1,99 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+<form class="form" method="post">
+<div class="inner-width-container">
+  <div class="govuk-error-summary govuk-!-padding-top-6" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      Please make a selection
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-error">Answer the question below to continue</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">About your business</h1>
+      </div>
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" id="sales">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading beis-blue-text">
+              Where do most of your sales take place?
+            </h1>
+          </legend>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Answer the question below to continue
+          </p>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="online" name="sales" type="radio" value="Online">
+              <label class="govuk-label govuk-radios__label" for="online">
+                Online
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="person" name="sales" type="radio" value="In person">
+              <label class="govuk-label govuk-radios__label" for="person">
+                In person
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="both" name="sales" type="radio" value="Online and in person">
+              <label class="govuk-label govuk-radios__label" for="both">
+                Online and in person
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" class="govuk-button primary  govuk-!-padding-2"> Next </button>
+
+    </div>
+  </div>
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      
+      if ($('input:radio[name=sales]').is(':checked')){
+        $('.form').attr('action', '/diagnostic-tool/sector');
+      } else {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/sales');
+      }
+    });
+
+  });
+
+</script>
+
+{% endblock %}

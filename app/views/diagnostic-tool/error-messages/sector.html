@@ -1,0 +1,134 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+<form class="form" action="" method="post">
+<div class="inner-width-container">
+  <div class="govuk-error-summary govuk-!-padding-top-6" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      Please make a selection
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-error">Answer the question below to continue</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">About your business</h1>
+      </div>
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading beis-blue-text">
+            Which sector do you operate in?
+          </h1>
+        </legend>
+        <p id="passport-issued-error" class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Answer the question below to continue
+        </p>
+        <select class="govuk-select input-validation-error" data-val="true" data-val-required="The selectedValue field is required." id="sector" name="sector">
+          <option value="selected" selected="selected">Select </option>
+          <option value="Agriculture, Forestry and Fishing" class="form-control col-sm-3">
+              Agriculture, Forestry and Fishing
+          </option>
+          <option value="Mining, Quarrying and Utilities." class="form-control col-sm-3">
+              Mining, Quarrying and Utilities.
+          </option>
+          <option value="Manufacturing" class="form-control col-sm-3">
+              Manufacturing
+          </option>
+          <option value="Construction" class="form-control col-sm-3">
+              Construction
+          </option>
+          <option value="Wholesale and Retail Trade" class="form-control col-sm-3">
+              Wholesale and Retail Trade
+          </option>
+          <option value="Transportation and Storage" class="form-control col-sm-3">
+              Transportation and Storage
+          </option>
+          <option value="Accommodation and Food Service" class="form-control col-sm-3">
+              Accommodation and Food Service
+          </option>
+          <option value="Information and Communication" class="form-control col-sm-3">
+              Information and Communication
+          </option>
+          <option value="Financial and Insurance" class="form-control col-sm-3">
+              Financial and Insurance
+          </option>
+          <option value="Real Estate" class="form-control col-sm-3">
+              Real Estate
+          </option>
+          <option value="Professional, Scientific and Technical" class="form-control col-sm-3">
+              Professional, Scientific and Technical
+          </option>
+          <option value="Administrative and Support Service" class="form-control col-sm-3">
+              Administrative and Support Service
+          </option>
+          <option value="Public Administration and Defence" class="form-control col-sm-3">
+              Public Administration and Defence
+          </option>
+          <option value="Education" class="form-control col-sm-3">
+              Education
+          </option>
+          <option value="Health and Social Work" class="form-control col-sm-3">
+              Health and Social Work
+          </option>
+          <option value="Arts, Entertainment and Recreation" class="form-control col-sm-3">
+              Arts, Entertainment and Recreation
+          </option>
+          <option value="Other services" class="form-control col-sm-3">
+              Other services
+          </option>
+        </select>
+      </div>
+        <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <form action="/">
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/sales"> Back </button>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+          </form>
+        </div>
+
+    </div>
+  </div>
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      if ($('#sector').val() == 'selected') {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/sector');
+      }
+      else {
+        $('.form').attr('action', '/diagnostic-tool/software-use');
+      }
+    });
+  });
+
+</script>
+
+{% endblock %}

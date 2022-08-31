@@ -1,0 +1,168 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+<form class="form" method="post">
+<div class="inner-width-container">
+  <div class="govuk-error-summary govuk-!-padding-top-6" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      Please make a selection
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#passport-issued-error">Answer the question below to continue</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">What you need & want to achieve
+        </h1>
+      </div>
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading beis-blue-text">
+              Which tasks do you want to simplify?
+            </h2>
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Answer the question below to continue
+          </p>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task" name="task" type="checkbox" value="Taking payments and listing products for sale">
+              <label class="govuk-label govuk-checkboxes__label" for="task">
+                Taking payments and listing products for sale
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-1" name="task" type="checkbox" value="Selling through the business' website">
+              <label class="govuk-label govuk-checkboxes__label" for="task-1">
+                Selling through the business' website
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-2" name="task" type="checkbox" value="Creating personalised, online customer experiences">
+              <label class="govuk-label govuk-checkboxes__label" for="task-2">
+                Creating personalised, online customer experiences
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-3" name="task" type="checkbox" value="Digital tax and accounting">
+              <label class="govuk-label govuk-checkboxes__label" for="task-3">
+                Digital tax and accounting
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-4" name="task" type="checkbox" value="Managing sales info, receipts and invoices">
+              <label class="govuk-label govuk-checkboxes__label" for="task-4">
+                Managing sales info, receipts and invoices
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-5" name="task" type="checkbox" value="Tracking stock levels">
+              <label class="govuk-label govuk-checkboxes__label" for="task-5">
+                Tracking stock levels
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-6" name="task" type="checkbox" value="Monitoring sales and promotions">
+              <label class="govuk-label govuk-checkboxes__label" for="task-6">
+                Monitoring sales and promotions
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-7" name="task-" type="checkbox" value="Understanding customer needs and trends">
+              <label class="govuk-label govuk-checkboxes__label" for="task-7">
+                Understanding customer needs and trends
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input none" id="task-8" name="task" type="checkbox" value="Tracking communication between the team and customers">
+              <label class="govuk-label govuk-checkboxes__label" for="task-8">
+                Tracking communication between the team and customers
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="else" name="else" type="checkbox" value="None of these">
+              <label class="govuk-label govuk-checkboxes__label" for="else">
+                None of these
+              </label>
+            </div>
+            <div id="more-detail-block" class="govuk-!-padding-left-9">
+              <div id="more-detail-hint" class="govuk-hint">
+                If your software type isn't listed here, please tell us the type of software you're interested in.
+              </div>
+              <textarea class="govuk-textarea" id="more-detail-1" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+        <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/need"> Back </button>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+        </div>
+
+    </div>
+  </div>
+</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+
+      if ($('input:checkbox').is(':checked') == false){
+        $('.form').attr('action', '/diagnostic-tool/error-messages/task');
+      }
+
+      else if ($.trim($('#more-detail-1').val()).length > 1){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
+
+      else if ($('input:checkbox[name=else]').is(':checked') == true ) {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/task2');
+      }
+
+      else if ($('input:checkbox[name=task]').is(':checked') == true){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
+    });
+
+  });
+
+</script>
+
+
+{% endblock %}
+
+<!-- .govuk-checkboxes__input:checked + .govuk-checkboxes__label:after {
+  opacity: 1;
+} -->
