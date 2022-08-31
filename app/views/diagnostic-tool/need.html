@@ -1,0 +1,83 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+
+<div class="inner-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+        <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+          <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">What you need & want to achieve
+          </h1>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h2 class="govuk-fieldset__heading beis-blue-text">
+                Do you know which software you need?
+              </h2>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="need-yes" name="need" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="need-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="need-no" name="need" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="need-no">
+                  No
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+
+        <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <a href="/diagnostic-tool/storage"><button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" > Back </button></a>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+
+        </div>
+
+      </div>
+    </div>        
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $('#btn-diagnostictoolformviews-renderdiagnostictool-nextstep').click(function (e) {
+
+        if ($('#need-yes').is(':checked')) {
+          window.location.href = 'type';
+        }
+        else if ($('#need-no').is(':checked')) {
+          window.location.href = 'task';
+        }
+      });
+    });
+
+</script>
+
+{% endblock %}

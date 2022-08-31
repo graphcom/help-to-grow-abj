@@ -1,0 +1,82 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+
+<div class="inner-width-container">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">Your IT set up
+        </h1>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading beis-blue-text">
+              How do you currently store most of your business information?
+            </h1>
+          </legend>
+          <div id="waste-hint" class="govuk-hint beis-blue-text">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                On stickies and in notebooks
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                On individual computer hard drives
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                On shared hard drives
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                On Cloud storage (e.g. iCloud)
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+        <form action="/">
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/support"> Back </button>
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/need"> Next </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

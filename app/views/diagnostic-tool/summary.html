@@ -1,0 +1,219 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+
+<div class="inner-width-container">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">Here's an overview of your answers
+        </h1>
+        <p class="govuk-!-padding-top-3 govuk-!-padding-bottom-3 beis-blue-text">You can change what you've told us, and get these results sent to you by email before seeing your results.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <h2 class="govuk-heading-l beis-blue-text">
+        About your business
+      </h2>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Where do most of your sales take place?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Online
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Which sector do you operate in?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Arts, Entertainment and Recreation
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-l beis-blue-text">
+        How you use software
+      </h2>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            How does your business currently use software?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            All processes are digital. We're looking for replacements
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-l beis-blue-text">
+        Your IT set up
+      </h2>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What kind of IT support do you have in place?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            We have someone / an in-house team
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            How do you currently store most of your business information?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            On Cloud storage (e.g. iCloud)
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-l beis-blue-text">
+        What you need & want to achieve
+      </h2>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Do you know which software you need?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What type of software are you looking for?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Customer relationship management (CRM)<br>
+            eCommerce<br>
+            Digital accounting
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l beis-blue-text">
+        Want to review your results later?
+      </h2>
+      <p>Enter your email address and we'll send a copy of this page to your inbox.</p>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Email Address
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                I consent to the Department for Business, Energy & Industrial Strategy (BEIS) contacting me (including through one or more of the third party recipients identified in the privacy policy) by email to keep me informed about news, updates and events relating to Help to Grow: Digital. By ticking the box(es) above I am freely consenting to BEIS (and/or the third party recipients identified in the privacy policy) holding and processing my personal data for these purposes.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                Tick this box to confirm you have read our <a>privacy policy</a>.
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <form action="/">
+        <button id="btn-diagnostictoolformviews-renderdiagnostictool-startform" type="submit" class="govuk-button govuk-button--start primary govuk-!-padding-2" formaction="/diagnostic-tool/results">
+          See results
+          <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false" class="govuk-button__start-icon">
+              <path fill="#FFB000" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $( "#else" ).click(function() {
+      $("#more-detail").toggle();
+    });
+
+  });
+
+</script>
+
+
+{% endblock %}

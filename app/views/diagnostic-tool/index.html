@@ -1,0 +1,47 @@
+{% extends "layout_diagnostic_tool.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital - Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .govuk-grid-row {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+</style>
+
+
+
+
+
+<div class="inner-width-container">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-0">
+      <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+        <h1 class="govuk-heading-xl govuk-!-padding-top-3 govuk-!-padding-bottom-3 govuk-!-margin-0 beis-blue-text">Take 2 minutes to find your software solution</h1>
+      </div>
+
+      <p class="govuk-body beis-blue-text">Answer a few questions about how you work and what you want to achieve, and we'll recommend a software solution and advice, for your business.</p>
+      <p class="govuk-body beis-blue-text">If your business is eligible, you'll also be able to access a discount of up to 50% towards the costs of buying approved software, worth up to £5,000.</p>
+
+      <form action="/diagnostic-tool/sales">
+        <button id="btn-diagnostictoolformviews-renderdiagnostictool-startform" type="submit" class="govuk-button govuk-button--start primary govuk-!-padding-2" formaction="/diagnostic-tool/sales">
+          Get started
+          <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false" class="govuk-button__start-icon">
+              <path fill="#FFB000" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg>
+        </button>
+      </form>
+
+      
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
