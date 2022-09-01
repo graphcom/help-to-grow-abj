@@ -16,7 +16,7 @@ Help to Grow: Digital - Learning Platform
 
 
 
-
+<form class="form" method="post">
 <div class="inner-width-container">
 
   <div class="govuk-grid-row">
@@ -38,20 +38,20 @@ Help to Grow: Digital - Learning Platform
           </div>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="Customer relationship management (CRM)">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
                 Customer relationship management (CRM)
               </label>
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+              <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="eCommerce">
+              <label class="govuk-label govuk-checkboxes__label" for="type-2">
                 eCommerce
               </label>
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              <input class="govuk-checkboxes__input" id="type-3" name="type" type="checkbox" value="Digital accounting">
+              <label class="govuk-label govuk-checkboxes__label" for="type-3">
                 Digital accounting
               </label>
             </div>
@@ -65,21 +65,21 @@ Help to Grow: Digital - Learning Platform
               <div id="more-detail-hint" class="govuk-hint">
                 If your software type isn't listed here, please tell us the type of software you're interested in.
               </div>
-              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              <textarea class="govuk-textarea" id="more-detail-1" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
             </div>
           </div>
         </fieldset>
       </div>
         <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-          <form action="/">
             <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/need"> Back </button>
-            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/summary"> Next </button>
-          </form>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
         </div>
 
     </div>
   </div>
 </div>
+</form>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
 
@@ -89,6 +89,25 @@ Help to Grow: Digital - Learning Platform
 
     $( "#else" ).click(function() {
       $("#more-detail").toggle();
+    });
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+
+      if ($('input:checkbox').is(':checked') == false){
+        $('.form').attr('action', '/diagnostic-tool/error-messages/type');
+      }
+
+      else if ($.trim($('#more-detail-1').val()).length > 1){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
+
+      else if ($('input:checkbox[name=else]').is(':checked') == true ) {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/type2');
+      }
+
+      else if ($('input:checkbox[name=type]').is(':checked') == true){
+        $('.form').attr('action', '/diagnostic-tool/summary');
+      }
     });
 
   });

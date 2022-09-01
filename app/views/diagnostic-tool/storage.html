@@ -16,7 +16,7 @@ Help to Grow: Digital - Learning Platform
 
 
 
-
+<form class="form" method="post">
 <div class="inner-width-container">
 
   <div class="govuk-grid-row">
@@ -38,26 +38,26 @@ Help to Grow: Digital - Learning Platform
           </div>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
+              <input class="govuk-checkboxes__input" id="storage" name="storage" type="checkbox" value="On stickies and in notebooks">
+              <label class="govuk-label govuk-checkboxes__label" for="storage">
                 On stickies and in notebooks
               </label>
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+              <input class="govuk-checkboxes__input" id="storage-2" name="storage" type="checkbox" value="On individual computer hard drives">
+              <label class="govuk-label govuk-checkboxes__label" for="storage-2">
                 On individual computer hard drives
               </label>
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              <input class="govuk-checkboxes__input" id="storage-3" name="storage" type="checkbox" value="On shared hard drives">
+              <label class="govuk-label govuk-checkboxes__label" for="storage-3">
                 On shared hard drives
               </label>
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              <input class="govuk-checkboxes__input" id="storage-4" name="storage" type="checkbox" value="On Cloud storage (e.g. iCloud)">
+              <label class="govuk-label govuk-checkboxes__label" for="storage-4">
                 On Cloud storage (e.g. iCloud)
               </label>
             </div>
@@ -67,16 +67,31 @@ Help to Grow: Digital - Learning Platform
       </div>
 
       <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-        <form action="/">
           <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/support"> Back </button>
-          <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/need"> Next </button>
-        </form>
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
       </div>
 
     </div>
   </div>
 </div>
+</form>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      
+      if ($('input:checkbox[name=storage]').is(':checked')){
+        $('.form').attr('action', '/diagnostic-tool/need');
+      } else {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/storage');
+      }
+    });
+
+  });
+</script>
 
 {% endblock %}

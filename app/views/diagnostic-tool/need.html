@@ -16,7 +16,7 @@ Help to Grow: Digital - Learning Platform
 
 
 
-
+<form class="form" method="get">
 <div class="inner-width-container">
 
     <div class="govuk-grid-row">
@@ -35,13 +35,13 @@ Help to Grow: Digital - Learning Platform
             </legend>
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="need-yes" name="need" type="radio" value="yes">
+                <input class="govuk-radios__input" id="need-yes" name="need" type="radio" value="Yes">
                 <label class="govuk-label govuk-radios__label" for="need-yes">
                   Yes
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="need-no" name="need" type="radio" value="no">
+                <input class="govuk-radios__input" id="need-no" name="need" type="radio" value="No">
                 <label class="govuk-label govuk-radios__label" for="need-no">
                   No
                 </label>
@@ -52,7 +52,8 @@ Help to Grow: Digital - Learning Platform
         </div>
 
         <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-          <a href="/diagnostic-tool/storage"><button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" > Back </button></a>
+            <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary"  formaction="/diagnostic-tool/storage"> Back </button>
+          
             <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
 
         </div>
@@ -60,6 +61,7 @@ Help to Grow: Digital - Learning Platform
       </div>
     </div>        
 </div>
+</form>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
 
@@ -70,10 +72,13 @@ Help to Grow: Digital - Learning Platform
     $('#btn-diagnostictoolformviews-renderdiagnostictool-nextstep').click(function (e) {
 
         if ($('#need-yes').is(':checked')) {
-          window.location.href = 'type';
+          $('.form').attr('action', '/diagnostic-tool/type');
         }
         else if ($('#need-no').is(':checked')) {
-          window.location.href = 'task';
+          $('.form').attr('action', '/diagnostic-tool/task');
+        }
+        else {
+          $('.form').attr('action', '/diagnostic-tool/error-messages/need');
         }
       });
     });

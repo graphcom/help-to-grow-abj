@@ -16,7 +16,7 @@ Help to Grow: Digital - Learning Platform
 
 
 
-
+<form class="form" method="post">
 <div class="inner-width-container">
 
   <div class="govuk-grid-row">
@@ -31,8 +31,8 @@ Help to Grow: Digital - Learning Platform
             Which sector do you operate in?
           </h1>
         </legend>
-        <select class="govuk-select input-validation-error" data-val="true" data-val-required="The selectedValue field is required." id="steps_1__elements_0__selectedValue" name="steps[1].elements[0].selectedValue">
-          <option value="" selected="selected">Select </option>
+        <select class="govuk-select input-validation-error" data-val="true" data-val-required="The selectedValue field is required." id="sector" name="steps[1].elements[0].selectedValue">
+          <option value="selected" selected="selected">Select</option>
           <option value="Agriculture, Forestry and Fishing" class="form-control col-sm-3">
               Agriculture, Forestry and Fishing
           </option>
@@ -86,26 +86,34 @@ Help to Grow: Digital - Learning Platform
           </option>
         </select>
       </div>
-        <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-          <form action="/">
-            <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/sales"> Back </button>
-            <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/software-use"> Next </button>
-          </form>
-        </div>
-    
+      <div class="govuk-width-container govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-back" type="submit" class="govuk-button primary" formaction="/diagnostic-tool/sales"> Back </button>
 
-      <!-- <form action="/diagnostic-tool/nextstep">
-        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary  govuk-!-padding-2" formaction="/diagnostic-tool/nextstep"> Next </button>
-      </form>
-      <form action="/diagnostic-tool/nextstep">
-        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary  govuk-!-padding-2" formaction="/diagnostic-tool/nextstep"> Next </button>
-      </form> -->
-
+          <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary"> Next </button>
+      </div>
     </div>
   </div>
 </div>
+</form>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      if ($('#sector').val() == 'selected') {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/sector');
+      }
+      else {
+        $('.form').attr('action', '/diagnostic-tool/software-use');
+      }
+    });
+
+  });
+
+</script>
 
 
 {% endblock %}

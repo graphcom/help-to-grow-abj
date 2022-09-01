@@ -16,7 +16,7 @@ Help to Grow: Digital - Learning Platform
 
 
 
-
+<form class="form" method="post">
 <div class="inner-width-container">
 
   <div class="govuk-grid-row">
@@ -55,14 +55,32 @@ Help to Grow: Digital - Learning Platform
         </fieldset>
       </div>
 
-      <form action="/diagnostic-tool/sector">
-        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary  govuk-!-padding-2" formaction="/diagnostic-tool/sector"> Next </button>
-      </form>
+        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary  govuk-!-padding-2"> Next </button>
 
     </div>
   </div>
 </div>
 
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+    $("#btn-diagnostictoolformviews-renderdiagnostictool-nextstep").click(function() {
+      
+      if ($('input:radio[name=sales]').is(':checked')){
+        $('.form').attr('action', '/diagnostic-tool/sector');
+      } else {
+        $('.form').attr('action', '/diagnostic-tool/error-messages/sales');
+      }
+    });
+
+  });
+
+</script>
 
 
 {% endblock %}
