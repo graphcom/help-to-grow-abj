@@ -42,7 +42,7 @@ Help to Grow: Digital - Learning Platform
             Where do most of your sales take place?
           </dt>
           <dd class="govuk-summary-list__value">
-            Online
+            {{ data['sales'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -55,7 +55,7 @@ Help to Grow: Digital - Learning Platform
             Which sector do you operate in?
           </dt>
           <dd class="govuk-summary-list__value">
-            Arts, Entertainment and Recreation
+            {{ data['sector'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -75,7 +75,7 @@ Help to Grow: Digital - Learning Platform
             How does your business currently use software?
           </dt>
           <dd class="govuk-summary-list__value">
-            All processes are digital. We're looking for replacements
+            {{ data['software-use'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -95,7 +95,7 @@ Help to Grow: Digital - Learning Platform
             What kind of IT support do you have in place?
           </dt>
           <dd class="govuk-summary-list__value">
-            We have someone / an in-house team
+            {{ data['support'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -108,7 +108,9 @@ Help to Grow: Digital - Learning Platform
             How do you currently store most of your business information?
           </dt>
           <dd class="govuk-summary-list__value">
-            On Cloud storage (e.g. iCloud)
+            {% for item in data['storage'] %}
+              <p>{{ item }}</p>
+            {% endfor %}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -128,7 +130,7 @@ Help to Grow: Digital - Learning Platform
             Do you know which software you need?
           </dt>
           <dd class="govuk-summary-list__value">
-            Yes
+            {{ data['need'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -136,14 +138,16 @@ Help to Grow: Digital - Learning Platform
             </a>
           </dd>
         </div>
+        {% set need = data['need'] %}
+        {% if need == 'Yes' %}
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             What type of software are you looking for?
           </dt>
           <dd class="govuk-summary-list__value">
-            Customer relationship management (CRM)<br>
-            eCommerce<br>
-            Digital accounting
+            {% for item in data['type'] %}
+              <p>{{ item }}</p>
+            {% endfor %}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#">
@@ -151,7 +155,27 @@ Help to Grow: Digital - Learning Platform
             </a>
           </dd>
         </div>
+        {% elif need == 'No' %}
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Which tasks do you want to simplify?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {% for item in data['task'] %}
+              <p>{{ item }}</p>
+            {% endfor %}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        {% endif %}
+
+
       </dl>
+
 
       <h2 class="govuk-heading-l beis-blue-text">
         Want to review your results later?

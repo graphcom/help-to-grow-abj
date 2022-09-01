@@ -26,7 +26,7 @@ Help to Grow: Digital - Learning Platform
       </div>
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
+        <fieldset class="govuk-fieldset" id="sales">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading beis-blue-text">
               Where do most of your sales take place?
@@ -34,20 +34,20 @@ Help to Grow: Digital - Learning Platform
           </legend>
           <div class="govuk-radios" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              <input class="govuk-radios__input" id="online" name="sales" type="radio" value="Online">
+              <label class="govuk-label govuk-radios__label" for="online">
                 Online
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              <input class="govuk-radios__input" id="person" name="sales" type="radio" value="In person">
+              <label class="govuk-label govuk-radios__label" for="person">
                 In person
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+              <input class="govuk-radios__input" id="both" name="sales" type="radio" value="Online and in person">
+              <label class="govuk-label govuk-radios__label" for="both">
                 Online and in person
               </label>
             </div>
@@ -55,12 +55,11 @@ Help to Grow: Digital - Learning Platform
         </fieldset>
       </div>
 
-        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" type="submit" class="govuk-button primary  govuk-!-padding-2"> Next </button>
+        <button id="btn-diagnostictoolformviews-renderdiagnostictool-nextstep" class="govuk-button primary  govuk-!-padding-2"> Next </button>
 
     </div>
   </div>
 </div>
-
 </form>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
@@ -81,6 +80,5 @@ Help to Grow: Digital - Learning Platform
   });
 
 </script>
-
 
 {% endblock %}
