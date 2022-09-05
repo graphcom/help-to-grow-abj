@@ -594,3 +594,97 @@ dd p{
     justify-content: flex-end;
 }
 
+.beis-image-caption img {
+    width: 65%;
+}
+
+
+
+/* social media */
+
+.beis-social-media {
+    padding: 20px 0;
+}
+
+.beis-social-media__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+}
+
+
+.beis-social-media__list-item {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+
+
+.beis-social-media__icon {
+    display: block;
+    color: #fff;
+}
+
+
+svg{
+    width: 34px;
+    height: 34px;
+    fill: none;
+}
+
+.beis-social-media__link {
+    display: block;
+    background: #1D3A64;
+    position: relative;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.beis-social-media__icon {
+    display: block;
+    color: #fff;
+}
+
+/* statistics */
+.statistics-text .left-column, .statistics-text .right-column {
+    display: flex;
+    text-align: center;
+}
+
+.statistics-text .left-column {
+    justify-content: flex-end;
+}
+
+
+.statistics-text .beis-columns {
+    text-align: center;
+    max-width: 465px;
+    box-sizing: border-box;
+}
+
+.statistics-text .left-column h1.beis-yellow-text, .statistics-text .right-column h1.beis-yellow-text {
+    color: #FFB000;
+}
+
+.statistics-text .left-column .govuk-body.statistic-text, .statistics-text .right-column .govuk-body.statistic-text {
+    padding: 1px;
+}
+
+/* video */
+
+.video .youtube-container iframe, .video .youtube-container object, .video .youtube-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video .youtube-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
