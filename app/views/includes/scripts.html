@@ -1,6 +1,43 @@
 <!-- Javascript -->
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
+<script type="text/javascript">
+  /* filtering for case studies*/
+
+    $(function(){
+      $('#all').click(function(){
+        $('.category').show();
+        $('input:checkbox').removeAttr('checked')
+        return false;
+      });
+
+      $('#btn-filter').click(function(){
+        if( $('#chk-crm').is(':checked') ){
+          $('.category').show();
+          $('.category').not('.crm').hide();
+          return false;
+        } else {
+
+          if ($('#chk-accounting').is(':checked')) {
+            $('.category').show();
+            $('.category').not('.accounting').hide();
+            return false;
+
+          } else {
+
+            if ($('#chk-ecommerce').is(':checked')) {
+              $('.category').show();
+              $('.category').not('.ecommerce').hide();
+              return false;
+
+            }
+          }
+        }
+
+      });
+  });
+</script>
+
 {% for scriptUrl in extensionConfig.scripts %}
   <script src="{{scriptUrl}}"></script>
 {% endfor %}
