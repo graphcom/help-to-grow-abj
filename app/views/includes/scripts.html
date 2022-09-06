@@ -2,9 +2,10 @@
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
 <script type="text/javascript">
-  /* filtering for case studies*/
+
 
     $(function(){
+      /* filtering for case studies*/
       $('#all').click(function(){
         $('.category').show();
         $('input:checkbox').removeAttr('checked')
@@ -33,8 +34,75 @@
             }
           }
         }
+      });
+
+
+      /* filtering for articles*/
+
+      $('#reset-articles').click(function(){
+        $('.category').show();
+        $('input:checkbox').removeAttr('checked')
+        return false;
+      });
+
+
+      $('#btn-filter-articles').click(function(){
+        if( $('#chk-crm').is(':checked') ){
+          $('.category').show();
+          $('.category').not('.crm').hide();
+          return false;
+        }
+
+        else if ($('#chk-accounting').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.accounting').hide();
+          return false;
+        }
+
+        else if ($('#chk-ecommerce').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.ecommerce').hide();
+          return false;
+        }
+
+        else if ($('#chk-cyber-security').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.cyber-security').hide();
+          return false;
+        }
+
+        else if ($('#chk-training').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.team').hide();
+          return false;
+        }
+
+        else if ($('#chk-6-step').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.6-step').hide();
+          return false;
+        }
+
+        else if ($('#chk-choose-software').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.choose-software').hide();
+          return false;
+        }
+
+        else if ($('#chk-action-plan').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.action-plan').hide();
+          return false;
+        }
+
+        else if ($('#chk-implement-software').is(':checked')) {
+          $('.category').show();
+          $('.category').not('.implement-software').hide();
+          return false;
+        }
 
       });
+
   });
 </script>
 
