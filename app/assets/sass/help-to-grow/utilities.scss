@@ -620,6 +620,11 @@ dd p{
     position: relative;
 }
 
+.beis-landing-page-list__item {
+    border-top: 10px solid #FFB000;
+    margin-bottom: 40px;
+}
+
 
 .beis-social-media__icon {
     display: block;
@@ -644,6 +649,37 @@ svg{
 .beis-social-media__icon {
     display: block;
     color: #fff;
+}
+
+.beis-image {
+    display: block;
+    max-width: 100%;
+}
+
+
+.beis-landing-page-list__image {
+    max-width: 100%;
+    display: block;
+}
+
+.beis-landing-page-list__heading {
+    margin-top: 20px;
+    color: #1D3A64;
+}
+
+
+.beis-icon-link__icon {
+    display: inline-block;
+    align-self: center;
+    vertical-align: middle;
+    margin-right: 0.3em;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.toptip {
+    background: #f3f2f1;
+    padding: 40px;
 }
 
 /* statistics */
