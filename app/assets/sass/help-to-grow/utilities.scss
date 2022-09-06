@@ -6,6 +6,10 @@ main{
     margin-bottom: 20px;
 }
 
+p, .govuk-body, .govuk-body-m {
+    color: #1D3A64;
+}
+
 .beis-htg-logo {
     width:400px;
 }
@@ -172,6 +176,43 @@ h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
     width: 450px !important;
     float: left !important;
 }
+
+
+.quote-two-thirds .line-bars {
+    border-top: 1px solid #1D3A64;
+    border-bottom: 1px solid #1D3A64;
+    padding: 20px 0;
+}
+
+.image-with-text .text-float-right {
+    float: right;
+    padding: 0 0 0 20px;
+}
+
+.right {
+    text-align: right;
+}
+
+.business-card .grey {
+    background: #f3f2f1;
+    padding: 20px 0;
+}
+
+.business-card .business-card-image {
+    margin: 40px 0;
+    width: 296px;
+}
+
+.beis-row-flex {
+    display: flex;
+    align-items: center;
+}
+
+.business-card .optional {
+    padding: 20px 0;
+}
+
+
 
 .inner-width-container, .inner-width-container .govuk-grid-column-two-thirds, #feedback-prompt .govuk-width-container{
     max-width: 960px;
@@ -680,6 +721,15 @@ svg{
 .toptip {
     background: #f3f2f1;
     padding: 40px;
+}
+
+.image-with-text img {
+    width: 300px;
+}
+
+.image-with-text .text-float-left {
+    float: left;
+    padding: 0 20px 0px 0;
 }
 
 /* statistics */
