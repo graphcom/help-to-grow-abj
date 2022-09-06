@@ -70,24 +70,36 @@ Help to Grow: Digital - Learning Platform
     <fieldset class="govuk-fieldset">
       <div class="govuk-checkboxes" data-module="govuk-checkboxes">
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input productCategory" data-id="crm" name="categoryId-2" id="categoryId-crm" type="checkbox">
-          <label class="govuk-label govuk-checkboxes__label" for="categoryId-crm">
+          <input class="govuk-checkboxes__input productCategory" data-id="crm" name="categoryId-2" id="chk-crm" type="checkbox">
+          <label class="govuk-label govuk-checkboxes__label" for="chk-crm">
             Customer Relationship Management
           </label>
         </div>
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input productCategory" data-id="accounting" name="categoryId-1" id="categoryId-accounting" type="checkbox">
-          <label class="govuk-label govuk-checkboxes__label" for="categoryId-accounting">
+          <input class="govuk-checkboxes__input productCategory" data-id="accounting" name="categoryId-1" id="chk-accounting" type="checkbox">
+          <label class="govuk-label govuk-checkboxes__label" for="chk-accounting">
             Digital Accounting
           </label>
         </div>
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input productCategory" data-id="ecommerce" name="categoryId-3" id="categoryId-ecommerce" type="checkbox">
-          <label class="govuk-label govuk-checkboxes__label" for="categoryId-ecommerce">
+          <input class="govuk-checkboxes__input productCategory" data-id="ecommerce" name="categoryId-3" id="chk-ecommerce" type="checkbox">
+          <label class="govuk-label govuk-checkboxes__label" for="chk-ecommerce">
             eCommerce
           </label>
         </div>
 
+      </div>
+
+
+      <div class="govuk-grid-column-full govuk-body govuk-!-padding-0">
+        <div class="govuk-grid-row beis-columns-same-height govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <div class="govuk-button-group govuk-phase-banner">
+            <button type="button" class="govuk-button primary" id="btn-filter-software">Apply filters</button>
+            <a type="button" aria-label="Reset filters" role="button" class="govuk-button govuk-button--secondary" data-module="govuk-button" id="reset-software-filters">
+              Reset filters
+            </a>
+          </div>
+        </div>
       </div>
 
     </fieldset>
@@ -103,7 +115,7 @@ Help to Grow: Digital - Learning Platform
   </div>
 
 
-  <div class="formDiv" id="formDiv-accounting" style="display: block;">
+  <div class="formDiv category accounting" id="formDiv-accounting" style="display: block;">
     <form action="/comparison-tool/compare-products" id="1" method="post">
       <input type="hidden" name="selectedProductCategoryIds">
       <input type="hidden" name="selectedProductIds">
@@ -244,6 +256,8 @@ Help to Grow: Digital - Learning Platform
           <div class="top-line"></div>
         </div>
       </div>
+
+
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full govuk-!-padding-left-0">
           <div class="govuk-grid-row frame">
@@ -281,6 +295,7 @@ Help to Grow: Digital - Learning Platform
           </div>
         </div>
       </div>
+
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full govuk-!-padding-left-0">
           <div class="top-line"></div>
@@ -457,7 +472,7 @@ Help to Grow: Digital - Learning Platform
       <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DgQgT8MTOtLi5cKeRSAekUFM4xBTTvYf-k1gNFplDXvaXZTZyBM5UdXquD-CYy12b3-1jzMue7SBn_iCrIFAck906mZBG-FF6gxaJ73J7BVAKNHYd4kilDFmOjvFpDUBvWWtFHzwAo-vP8U69NYEbI"></form>    </div>
 
 
-  <div class="formDiv" id="formDiv-crm" style="display: block;">
+  <div class="formDiv category crm" id="formDiv-crm" style="display: block;">
     <form action="/comparison-tool/compare-products" id="2" method="post">            <input type="hidden" name="selectedProductCategoryIds">
       <input type="hidden" name="selectedProductIds">
       <div class="govuk-grid-row govuk-!-margin-top-8">
@@ -1160,7 +1175,7 @@ Help to Grow: Digital - Learning Platform
       <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DgQgT8MTOtLi5cKeRSAekUFM4xBTTvYf-k1gNFplDXvaXZTZyBM5UdXquD-CYy12b3-1jzMue7SBn_iCrIFAck906mZBG-FF6gxaJ73J7BVAKNHYd4kilDFmOjvFpDUBvWWtFHzwAo-vP8U69NYEbI"></form>    </div>
 
 
-  <div class="formDiv" id="formDiv-ecommerce" style="display: block;">
+  <div class="formDiv category ecommerce" id="formDiv-ecommerce" style="display: block;">
     <form action="/comparison-tool/compare-products" id="3" method="post">            <input type="hidden" name="selectedProductCategoryIds">
       <input type="hidden" name="selectedProductIds">
       <div class="govuk-grid-row govuk-!-margin-top-8">
