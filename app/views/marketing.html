@@ -7,7 +7,8 @@
 
 {% block beforeContent %}
 <div class="inner-width-container">
-  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+  <img src="/public/images/HTG_logo_960x188.svg" alt="Help to Grow Logo" class="beis-htg-logo">
+  <p><a class="govuk-back-link" href="javascript:window.history.back()">Back</a></p>
 </div>
 {% endblock %}
 
@@ -17,7 +18,7 @@
   <div class="inner-width-container">
     <div class="govuk-grid-column-two-thirds">
 
-    <form action="company/company_number" method="get">
+    <form action="applicant/check-your-answers" method="get">
 
       <div class="govuk-form-group">
 
@@ -36,47 +37,40 @@
             <br>
           </p>
 
-          <ul class="govuk-list govuk-list--bullet">
-            <li>keep you informed about news, updates and events relating to Help to Grow: Digital</li>
-            <li>tell you about past and current applications for discounts, including support when a discount expires</li>
-            <li>offer you support with your discount applications and redemptions, and software purchases</li>
+          <ul class="govuk-list govuk-list--bullet govuk-body">
+            <li>keep you informed about news,updates and events relating to Help to Grow: Digital</li>
+            <li>communicate with you about past and current applications for discounts, including the offer of support once a discount expires/li>
+            <li>offer you support with your discount applications & redemptions, and software purchases</li>
           </ul>
 
+          <p>Choose how you would like to receive this information.</p>
 
-          <h3 class="govuk-heading-m">How would you like to receive this information?</h3>
+          <p>By selecting 'phone number' or 'email' you are consenting to the Department of Business, Energy and Industrial Strategy (BEIS) holding, processing and using your personal data to contact you (including through one or more of the third parties identified in the privacy policy).</p>
 
         </div>
 
         <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="optional-phone" name="marketing-option" type="checkbox" value=" Phone ">
+            <label class="govuk-label govuk-checkboxes__label gov" for="optional-phone">
+              Phone number (optional)
+            </label>
+          </div>
+
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="optional-email" name="marketing-option" type="checkbox" value=" Email ">
             <label class="govuk-label govuk-checkboxes__label" for="optional-email">
               Email (optional)
             </label>
           </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="optional-phone" name="marketing-option" type="checkbox" value=" Phone ">
-            <label class="govuk-label govuk-checkboxes__label" for="optional-phone">
-              Phone number (optional)
-            </label>
-          </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="optional-none" name="marketing-option" type="checkbox" value=" None ">
-            <label class="govuk-label govuk-checkboxes__label" for="optional-none">
-              I do not want to receive marketing information (optional)
-            </label>
-          </div>
         </fieldset>
+
+        <br>
+        <p>If you do not want to receive updates, select 'Continue'</p>
 
       </div>
 
       <button class="govuk-button" data-module="govuk-button">
-        Accept
-      </button>
-
-      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
         Continue
       </button>
 
