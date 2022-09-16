@@ -145,7 +145,7 @@ h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
     width: 100%;
 }
 
-.beis-navy-blue {
+.beis-navy-blue, .beis-navy-blue-large {
     background-color: #1E1A34;
     //display: block;
     //height: 467px;
@@ -159,7 +159,7 @@ h1, h2, h3, .govuk-body, .govuk-heading-xl, .govuk-heading-l {
     background-color: #000;
 }
 
-.beis-navy-blue > div.govuk-width-container{
+.beis-navy-blue > div.govuk-width-container, .beis-navy-blue-large > div.govuk-width-container{
     max-width: 960px;
 }
 

@@ -1,0 +1,102 @@
+{% extends "layout_one-to-one.html" %}
+
+{% block pageTitle %}
+Help to Grow: Digital -Learning Platform
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .govuk-grid-row {
+        margin-right: initial;
+        margin-left: initial;
+    }
+</style>
+
+
+<div class="navigation-breadcrumb" id="12">
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-body" style="padding: 0">
+                <a href="/" id="breadcrumb-link-home">Home</a><span class="next-pointer"> &gt; </span>
+                About
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="landing-page-hero columns beis-navy-blue-large">
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row beis-columns-same-height" style="height:20em!important;">
+            <div class="govuk-grid-column-one-half-text landing-page-hero-left">
+                <div class="govuk-grid-row">
+                    <div class="left-column beis-white-text">
+                        <h1 class="govuk-heading-l beis-white-text govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+                            One-to-one business advice
+                        </h1>
+                        <div class="govuk-body beis-white-text govuk-!-padding-right-8">
+                            <p>Get 50% or up to £5,000 off tailored advice with Help to Grow: Digital, compare one-to-one business advisers, or get free advice for your business.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-half landing-page-hero-right">
+                <div class="govuk-grid-row">
+                    <div class="right-column govuk-!-padding-right-3 landing-page-hero-img">
+                        <img src="/public/images/hero_one-to-one.png"  alt="" style="width: 160%; height: 160%; margin-left: -40%">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="three-column-heroes" id="1">
+    <div class="govuk-width-container govuk-!-margin-bottom-4 govuk-!-margin-top-6 inner-width-container">
+        <div class="govuk-grid-row beis-columns-same-height">
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-0">50% off advice</h3>
+                <p class="govuk-!-margin-top-2" style="min-height: 6.5em">Get 50% or up to £5,000 off the cost of one-to-one advice. The discount lasts for 6 months and you can choose an adviser that suits your business. </p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets/images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20" alt="">
+                <a id="three-col-link-read-about-the-scheme-about-the-scheme" href="/about/about-the-scheme" title="Read about the scheme" class="govuk-link">Am I eligible?</a>
+                <br> <br>
+                <button class="govuk-button button-start govuk-!-margin-bottom-0">Apply for discount</button>
+            </div>
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-0">Find an adviser</h3>
+                <p class="govuk-!-margin-top-2" style="min-height: 6.5em">Choose from a range of advisers with expertise in your area and claim your 50% Help to Grow: Digital discount. </p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets/images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20" alt="">
+                <a id="three-col-link-check-your-eligibility-eligibility" href="/about/eligibility" title="Check your eligibility" class="govuk-link">Go to PaidSMEAdvice.co.uk</a>
+            </div>
+            <div class="govuk-grid-column-one-third govuk-body">
+                <h3 class="govuk-!-margin-bottom-0">Free advice</h3>
+                <p class="govuk-!-margin-top-2" style="min-height: 6.5em">Free Advice is a website that offers free tailored advice, masterclasses with other businesses and experts, and free resources for digital growth.  </p>
+                <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets/images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20" alt="">
+                <a id="three-col-link-learn-digital-skills-business-advice-and-learning" href="/business-advice-and-learning" title="Learn digital skills" class="govuk-link">Go to FreeSMEAdvice.co.uk</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="govuk-phase-banner govuk-!-padding-top-0"></div>
+
+<div class="govuk-grid-row">
+    <div class="inner-width-container">
+        <div class="column-two-thirds govuk-!-margin-top-4">
+            <h3 class="govuk-heading-m">Further reading</h3>
+            <ul class="govuk-list">
+                <li class="list-bullet">How to recognise your business needs</li>
+                <li class="list-bullet">How to choose a business adviser</li>
+                <li class="list-bullet">Free advice: is it right for you?</li>
+                <li class="list-bullet">Business advice checklist</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    {% endblock %}

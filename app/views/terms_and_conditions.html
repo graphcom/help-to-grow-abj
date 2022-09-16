@@ -6,13 +6,16 @@
 {% endblock %}
 
 {% block beforeContent %}
-<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+<div class="inner-width-container">
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+</div>
 {% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="inner-width-container">
+    <div class="govuk-grid-column-two-thirds">
 
     <form class="terms-policy-update1" action="marketing" method="get">
 
@@ -65,6 +68,7 @@
 
     </form>
 
+  </div>
   </div>
 
 </div>

@@ -1,1 +1,1 @@
-# help-to-grow-priority-projects
+# help-to-grow-one-to-one
