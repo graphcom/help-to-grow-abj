@@ -6,14 +6,17 @@
 
 {% block beforeContent %}
 {% include "includes/phasebanner.html" %}
-<img src="/public/images/HTG_logo_960x188.svg" alt="Help to Grow Logo" class="beis-htg-logo">
-<p><a class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-0" href="check-work-email">Back</a></p>
+<div class="inner-width-container">
+  <img src="/public/images/HTG_logo_960x188.svg" alt="Help to Grow Logo" class="beis-htg-logo">
+  <p><a class="govuk-back-link govuk-!-margin-top-0 govuk-!-margin-bottom-0" href="check-work-email">Back</a></p>
+</div>
 {% endblock %}
 
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="inner-width-container">
+      <div class="govuk-grid-column-two-thirds">
 
 
       <span class="govuk-caption-l">Section 4 of 4</span>
@@ -26,6 +29,7 @@
         <button class="govuk-button" id="experian-check" data-module="govuk-button">Apply</button>
       </form>
 
+    </div>
     </div>
   </div>
 

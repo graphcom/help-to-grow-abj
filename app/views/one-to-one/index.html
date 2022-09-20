@@ -53,6 +53,21 @@ Help to Grow: Digital -Learning Platform
     </div>
 </div>
 
+<div id="anchor4" class="video beis-grey">
+    <div class="govuk-width-container inner-width-container">
+        <div class="govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+            <h2 class="govuk-heading-l beis-navy-blue-text">
+                6 steps to choosing the right software
+            </h2>
+
+            <div class="youtube-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_rXG6hnsHls?enablejsapi=1&amp;origin=https%3A%2F%2Fuat-www.learn-to-grow-your-business.service.gov.uk" title="6 Steps to choosing the right software for your business" style="border:0px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-gtm-yt-inspected-52819822_19="true" id="848521032" data-gtm-yt-inspected-7="true" data-gtm-yt-inspected-60095902_257="true"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <div class="three-column-heroes" id="1">
     <div class="govuk-width-container govuk-!-margin-bottom-4 govuk-!-margin-top-6 inner-width-container">
         <div class="govuk-grid-row beis-columns-same-height">
@@ -62,7 +77,9 @@ Help to Grow: Digital -Learning Platform
                 <img src="https://www.learn-to-grow-your-business.service.gov.uk/assets/images/link-arrow.svg" class="beis-link-icon link-icon-align govuk-!-margin-right-1" width="20" height="20" alt="">
                 <a id="three-col-link-read-about-the-scheme-about-the-scheme" href="/about/about-the-scheme" title="Read about the scheme" class="govuk-link">Am I eligible?</a>
                 <br> <br>
-                <button class="govuk-button button-start govuk-!-margin-bottom-0">Apply for discount</button>
+                <form method="post" action="/start">
+                    <button class="govuk-button button-start govuk-!-margin-bottom-0">Apply for discount</button>
+                </form>
             </div>
             <div class="govuk-grid-column-one-third govuk-body">
                 <h3 class="govuk-!-margin-bottom-0">Find an adviser</h3>
@@ -78,25 +95,24 @@ Help to Grow: Digital -Learning Platform
             </div>
         </div>
 
-    </div>
+        <div class="govuk-phase-banner govuk-!-padding-top-0"></div>
 
-</div>
-
-<div class="govuk-phase-banner govuk-!-padding-top-0"></div>
-
-<div class="govuk-grid-row">
-    <div class="inner-width-container">
-        <div class="column-two-thirds govuk-!-margin-top-4">
-            <h3 class="govuk-heading-m">Further reading</h3>
-            <ul class="govuk-list">
-                <li class="list-bullet">How to recognise your business needs</li>
-                <li class="list-bullet">How to choose a business adviser</li>
-                <li class="list-bullet">Free advice: is it right for you?</li>
-                <li class="list-bullet">Business advice checklist</li>
-            </ul>
+        <div class="govuk-grid-row">
+            <div class="inner-width-container">
+                <div class="column-two-thirds govuk-!-margin-top-4 govuk-body">
+                    <h3>Further reading</h3>
+                    <ul class="govuk-list govuk-list--bullet govuk-body">
+                        <li>How to recognise your business needs</li>
+                        <li>How to choose a business adviser</li>
+                        <li>Free advice: is it right for you?</li>
+                        <li>Business advice checklist</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
+    </div>
+
+</div>
 
     {% endblock %}
