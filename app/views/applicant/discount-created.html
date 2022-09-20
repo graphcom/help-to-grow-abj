@@ -1,0 +1,54 @@
+{% extends "layout_no_nav.html" %}
+
+{% block pageTitle %}
+  You have confirmed your email address
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/phasebanner.html" %}
+<div class="inner-width-container">
+  <img src="/public/images/HTG_logo_960x188.svg" alt="Help to Grow Logo" class="beis-htg-logo">
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="inner-width-container">
+      <div class="govuk-width-container">
+        <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title beis-white-text">
+                  Application complete
+                </h1>
+                <div class="govuk-panel__body">
+                  Your reference number<br><strong>HDJ2123F</strong>
+                </div>
+              </div>
+
+              <p class="govuk-body">We have sent a confirmation email with your discount code.</p>
+
+              <h2 class="govuk-heading-m beis-blue-text">What happens next</h2>
+
+              <p class="govuk-body">
+                You can find a business adviser registered with Help to Grow: Digital and get 50% or up to £5,000 off the cost of 6 months of advice.
+              </p>
+              <p class="govuk-body">
+                You have <span class="govuk-!-font-weight-bold">3 months</span> to start using your discount.
+              </p>
+
+              <p class="govuk-body">
+                If your discount expires, you will need to submit your application again.
+              </p>
+
+              <button class="govuk-button">Find a business advisor</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
