@@ -8,7 +8,7 @@ router.post('/sme-v6/companies-house-answer', function (req, res) {
     var isCompaniesHouse = req.session.data['company-number']
 
     // Check whether the variable matches a condition
-    if (isCompaniesHouse  == "Yes"){
+    if (isCompaniesHouse == "Yes"){
         // Send user to next page
         res.redirect('/company/companies-house-number')
     } else{
